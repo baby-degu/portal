@@ -25,6 +25,7 @@ const siteConfig = {
   tagline: "Let's seek out what we can do",
   url: 'https://baby-degu.github.io', // Your website URL
   baseUrl: '/docusaurus/', // Base URL for your project */
+  
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
