@@ -4,7 +4,7 @@
         <title>baby-degu Blog</title>
         <link>https://baby-degu.github.io/docusaurus/blog</link>
         <description>The best place to stay up-to-date with the latest baby-degu news and events.</description>
-        <lastBuildDate>Tue, 24 Oct 2017 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 May 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>https://baby-degu.github.io/docusaurus/blog</link>
         </image>
         <copyright>Copyright © 2020 Your Name or Your Company Name</copyright>
+        <item>
+            <title><![CDATA[7 ways to speed up your GitLab CI/CD times]]></title>
+            <link>https://baby-degu.github.io/docusaurus/blog/2020/05/04/7-ways-to-speed-up-gitlab-ci-cd-times.html</link>
+            <guid>https://baby-degu.github.io/docusaurus/blog/2020/05/04/7-ways-to-speed-up-gitlab-ci-cd-times.html</guid>
+            <pubDate>Mon, 04 May 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>As with any continuous integration and deployment platform, speed is crucial for developer efficiency. Recently we took our CI jobs and refactored them to ensure they were as fast as possible. Here’s how you can do the same:</p> <ol> <li>Host your own GitLab run...</li></ol>]]></description>
+        </item>
         <item>
             <title><![CDATA[New Version 1.0.0]]></title>
             <link>https://baby-degu.github.io/docusaurus/blog/2017/10/24/new-version-1.0.0.html</link>
