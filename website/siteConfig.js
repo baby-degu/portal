@@ -18,7 +18,7 @@ const users = [
 		infoLink: 'https://www.facebook.com',
 		pinned: true,
 	},
-]
+];
 
 const siteConfig = {
 	title: 'baby-degu', // Title for your website.
@@ -107,7 +107,7 @@ const siteConfig = {
 
 	// You may provide arbitrary config keys to be used as needed by your
 	// template. For example, if you need your repo's URL...
-	//   repoUrl: 'https://github.com/facebook/test-site',
-}
+	repoUrl: 'https://github.com/baby-degu/docusaurus',
+};
 
-module.exports = siteConfig
+module.exports = siteConfig;
