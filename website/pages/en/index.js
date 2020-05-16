@@ -141,23 +141,23 @@ class Index extends React.Component {
 			<Block layout="fourColumn" background="light">
 				{[
 					{
-						content: 'This is the content of my feature',
-						image: `${baseUrl}img/undraw_react.svg`,
+						content: 'Openness mitigates the learning-curve of newcomers. Think globally. Optimize globally.',
+						image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
 						imageAlign: 'top',
-						title: 'Feature One',
+						title: 'Make it open',
 					},
 					{
-						content: 'The content of my second feature',
-						image: `${baseUrl}img/undraw_operating_system.svg`,
+						content: 'Let\'s think about how we can keep the flat organization. Flat gives reliability. Flat means minimizing the information gap.',
+						image: `${baseUrl}img/undraw_open_source.svg`,
 						imageAlign: 'top',
-						title: 'Feature Two',
+						title: 'Keep flat',
 					},
 					{
-						content: 'This is the content of my feature',
-						image: `${baseUrl}img/undraw_react.svg`,
+						content: 'You don\'t trust code? Then create a trustable code. Or the system. Think about the future.',
+						image: `${baseUrl}img/undraw_code_review.svg`,
 						imageAlign: 'top',
-						title: 'Feature One',
-					},
+						title: 'Code first',
+					}
 				]}
 			</Block>
 		)
