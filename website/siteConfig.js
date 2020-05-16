@@ -42,6 +42,7 @@ const siteConfig = {
 		{ doc: 'doc1', label: 'Docs' },
 		{ doc: 'doc4', label: 'API' },
 		{ page: 'help', label: 'Help' },
+		{ href: 'https://github.com/baby-degu/docusaurus', label: 'Github', external: true },
 		{ blog: true, label: 'Blog' },
 	],
 
