@@ -8,16 +8,24 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
-// List of projects/orgs using your project for the users page.
-const users = [
+// List of projects/orgs who inspires us a lot.
+const pioneers = [
 	{
-		caption: 'User1',
+		caption: 'Aragon',
 		// You will need to prepend the image path with your baseUrl
 		// if it is not '/', like: '/test-site/img/image.jpg'.
-		image: '/img/undraw_open_source.svg',
-		infoLink: 'https://www.facebook.com',
+		image: 'https://assets.website-files.com/5e997428d0f2eb13a90aec8c/5e99778310343ed2dfe89331_logo_big.svg',
+		infoLink: 'https://aragon.org/',
 		pinned: true,
 	},
+	{
+		caption: '1Hive',
+		// You will need to prepend the image path with your baseUrl
+		// if it is not '/', like: '/test-site/img/image.jpg'.
+		image: 'https://1hive.org/content/images/2020/05/1Hive-Logo-4.png',
+		infoLink: 'https://1hive.org/',
+		pinned: true,
+	}
 ];
 
 const siteConfig = {
@@ -41,13 +49,13 @@ const siteConfig = {
 	headerLinks: [
 		{ doc: 'doc1', label: 'Docs' },
 		{ doc: 'doc4', label: 'API' },
-		{ page: 'help', label: 'Help' },
+		{ page: 'pioneers', label: 'Pioneers' },
 		{ href: 'https://github.com/baby-degu/docusaurus', label: 'Github', external: true },
 		{ blog: true, label: 'Blog' },
 	],
 
-	// If you have users set above, you add it here:
-	users,
+	// Adding pioneers who inspired us.
+	pioneers,
 
 	/* path to images for header/footer */
 	headerIcon: 'img/baby-degu.jpg',

@@ -157,11 +157,11 @@ class Index extends React.Component {
 		)
 
 		const Showcase = () => {
-			if ((siteConfig.users || []).length === 0) {
+			if ((siteConfig.pioneers || []).length === 0) {
 				return null
 			}
 
-			const showcase = siteConfig.users
+			const showcase = siteConfig.pioneers
 				.filter((user) => user.pinned)
 				.map((user) => (
 					<a href={user.infoLink} key={user.infoLink}>
@@ -174,15 +174,15 @@ class Index extends React.Component {
 			return (
 				<div className="productShowcaseSection paddingBottom">
 					<h2>
-						<translate>Who is Using This?</translate>
+						Who inspires us?
 					</h2>
 					<p>
-						<translate>This project is used by all these people</translate>
+						Thank you for leading!
 					</p>
 					<div className="logos">{showcase}</div>
 					<div className="more-users">
-						<a className="button" href={pageUrl('users.html')}>
-							More {siteConfig.title} Users
+						<a className="button" href={pageUrl('pioneers.html')}>
+							More About Pioneers
 						</a>
 					</div>
 				</div>
