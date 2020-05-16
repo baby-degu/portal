@@ -49,7 +49,7 @@ const siteConfig = {
 	users,
 
 	/* path to images for header/footer */
-	headerIcon: 'img/FullColor_IconOnly_1024x1024_72dpi_whitespace2.jpg',
+	headerIcon: 'img/baby-degu.jpg',
 	footerIcon: 'img/favicon.ico',
 	favicon: 'img/favicon.ico',
 
@@ -91,9 +91,9 @@ const siteConfig = {
 
 	// Open Graph and Twitter card images.
 	twitter: true,
-	twitterUsername: 'babydegu',
-	ogImage: 'img/undraw_online.svg',
-	twitterImage: 'img/undraw_tweetstorm.svg',
+	twitterUsername: 'baby-degu',
+	ogImage: 'img/baby-degu.jpg',
+	twitterImage: 'img/baby-degu.jpg',
 
 	// For sites with a sizable amount of content, set collapsible to true.
 	// Expand/collapse the links and subcategories under categories.
