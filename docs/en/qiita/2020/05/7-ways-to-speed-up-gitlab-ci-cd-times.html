@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>7 ways to speed up your GitLab CI/CD times · baby-degu</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![](https://cdn-images-1.medium.com/max/4000/1*bq3t_FxBR4sogEjaAQb-3w.jpeg)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="7 ways to speed up your GitLab CI/CD times · baby-degu"/><meta property="og:type" content="website"/><meta property="og:url" content="https://baby-degu.github.io/docusaurus/"/><meta property="og:description" content="![](https://cdn-images-1.medium.com/max/4000/1*bq3t_FxBR4sogEjaAQb-3w.jpeg)"/><meta property="og:image" content="https://baby-degu.github.io/docusaurus/img/baby-degu.jpg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://baby-degu.github.io/docusaurus/img/baby-degu.jpg"/><link rel="shortcut icon" href="/docusaurus/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://baby-degu.github.io/docusaurus/blog/atom.xml" title="baby-degu Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://baby-degu.github.io/docusaurus/blog/feed.xml" title="baby-degu Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docusaurus/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus/css/main.css"/><script src="/docusaurus/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus/en"><img class="logo" src="/docusaurus/img/baby-degu.jpg" alt="baby-degu"/><h2 class="headerTitleWithLogo">baby-degu</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docusaurus/docs/en/qiita" target="_self">Docs</a></li><li class=""><a href="/docusaurus/docs/en/dao" target="_self">DAO</a></li><li class=""><a href="/docusaurus/en/pioneers" target="_self">Pioneers</a></li><li class=""><a href="https://github.com/baby-degu/docusaurus" target="_blank">Github</a></li><li class=""><a href="/docusaurus/blog/" target="_self">Blog</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docusaurus/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docusaurus/docs/ja/qiita/2020/05/7-ways-to-speed-up-gitlab-ci-cd-times">日本語</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Articles</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Index</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus/docs/en/qiita">qiita</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Articles</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus/docs/en/qiita/2020/05/7-ways-to-speed-up-gitlab-ci-cd-times">7 ways to speed up your GitLab CI/CD times</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">7 ways to speed up your GitLab CI/CD times</h1></header><article><div><span><p><img src="https://cdn-images-1.medium.com/max/4000/1*bq3t_FxBR4sogEjaAQb-3w.jpeg" alt=""></p>
+<p>As with any continuous integration and deployment platform, speed is crucial for developer efficiency. Recently we took our CI jobs and refactored them to ensure they were as fast as possible. Here’s how you can do the same:</p>
+<h2><a class="anchor" aria-hidden="true" id="1-host-your-own-gitlab-runner"></a><a href="#1-host-your-own-gitlab-runner" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Host your own GitLab runner</h2>
+<p>GitLab.com <em>(GitLab’s hosted SaaS offering)</em> provides shared runners for repositories to use. While this is fantastic for getting off the ground quickly, we found the single biggest speed improvement came from hosting our own runners. The bottleneck for us wasn’t actually the CPU or RAM; it was the network. On a private cloud server, the network is dramatically faster. We consistently noticed about double the speed on both DigitalOcean and Google Cloud Platform.</p>
+<p>Network speed is especially important for building and deploying. Building often requires downloading libraries, dependencies, Docker images, etc. and deploying requires uploading assets elsewhere. When the network becomes congested on GitLab’s shared runners, these stages can feel like molasses.</p>
+<p>The great news is it’s actually quite easy to set up your own runner! You can spin up servers from <a href="https://www.digitalocean.com/">DigitalOcean</a>, <a href="https://aws.amazon.com/">AWS</a>, or <a href="https://cloud.google.com/">GCP</a> in next-to-no-time, and install GitLab’s runner on Linux with just a few commands. Just follow <a href="https://docs.gitlab.com/runner/install/linux-repository.html">their instructions</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="2-pre-install-dependencies"></a><a href="#2-pre-install-dependencies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Pre-install dependencies</h2>
+<p>This is a big one. If you’re installing a dependency every time you run a CI job, you’re wasting time. Instead, you should be using Docker images for your CI jobs that already have all the necessary dependencies installed.</p>
+<p>If you can’t find an image that has every dependency you need, you should pre-build it and store it in a container registry that GitLab’s runner has access to (we like to use GitLab’s <a href="https://docs.gitlab.com/ee/user/project/container_registry.html">built-in container registry</a>).</p>
+<h2><a class="anchor" aria-hidden="true" id="3-use-tiny-linux-distros-for-your-ci-images"></a><a href="#3-use-tiny-linux-distros-for-your-ci-images" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Use tiny Linux distros for your CI images</h2>
+<p>Whenever possible, use a tiny Linux distribution for images that run your CI jobs. <a href="https://alpinelinux.org/">Alpine Linux</a> is probably the most popular option, but there are others.</p>
+<p>Why? Chances are you don’t need a bloated distribution like Ubuntu to run a few tests or execute some build commands. So don’t waste time downloading an image that could be 30–40x as large.</p>
+<h2><a class="anchor" aria-hidden="true" id="4-use-the-overlay2-storage-driver"></a><a href="#4-use-the-overlay2-storage-driver" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Use the overlay2 storage driver</h2>
+<p>The single easiest way to speed up your CI is to use the overlay2 Docker storage driver, instead of the default vfs driver (<a href="https://docs.gitlab.com/ce/ci/docker/using_docker_build.html#using-the-overlayfs-driver">learn more</a>). You can do that by adding the following lines to the top of your .gitlab-ci.ymlfile.</p>
+<pre><code class="hljs">variables:
+  DOCKER_DRIVER: overlay2
+</code></pre>
+<p>Make sure to use overlay2 and not just overlay , as we found it shaves off a few extra seconds versus the latter.</p>
+<p>Alternatively, if you are hosting your own runner and have access to the config.toml file, you can enable this driver for every project automatically by adding the following line to the [[runners]] section (<a href="https://docs.gitlab.com/ce/ci/docker/using_docker_build.html#use-driver-for-every-project">learn more</a>):</p>
+<pre><code class="hljs">environment = [&quot;DOCKER_DRIVER=overlay2&quot;]
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="5-use-a-cached-docker-image-when-building"></a><a href="#5-use-a-cached-docker-image-when-building" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Use a cached Docker image when building</h2>
+<p>Docker is smart — it uses a build cache to only build layers that have changed, thereby drastically speeding up image build times. But if Docker can’t find a previous build (which would happen if you’re using a clean slate each time you run a CI job), you’ll always end up building images from scratch.</p>
+<p>To rectify this, simply let Docker know where it can find a previously built image with the --cache-from option <em>(added in Docker v1.13)</em>. Learn more about docker build options <a href="https://docs.docker.com/edge/engine/reference/commandline/build/#options">here</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="6-thoughtfully-organize-your-dockerfiles"></a><a href="#6-thoughtfully-organize-your-dockerfiles" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6. Thoughtfully organize your Dockerfiles</h2>
+<p>Speaking of Docker’s build cache, you should familiarize yourself with how it works. In a nutshell, each instruction is a layer, and each layer is only rebuilt if it has changed or if a layer before it has changed. What constitutes a “change” differs based on the type of instruction it is, but you can <a href="https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#build-cache">learn more about that here</a>.</p>
+<p>What matters, though, is that you don’t want to unnecessarily run instructions that haven’t <em>really</em> changed. For instance, if you have a container that installs NGINX with an instruction like:</p>
+<pre><code class="hljs">RUN apt-get -y update &amp;&amp; \
+    apt-get -y install nginx
+</code></pre>
+<p>You probably don’t want to place an instruction that copies over source files <em>before</em> that instruction (like the one shown below).</p>
+<pre><code class="hljs">COPY source/ /usr/share/nginx/html
+</code></pre>
+<p>Why? Because you almost certainly don’t need Docker to reinstall NGINX every time you change a source file. That will only slow down your builds.</p>
+<h2><a class="anchor" aria-hidden="true" id="7-take-advantage-of-gitlabs-powerful-cicd-configuration-settings"></a><a href="#7-take-advantage-of-gitlabs-powerful-cicd-configuration-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>7. Take advantage of GitLab’s powerful CI/CD configuration settings</h2>
+<p>There are three useful configuration features that, if employed properly, can greatly speed up your pipelines:</p>
+<h3><a class="anchor" aria-hidden="true" id="cache-dynamic-dependencies"></a><a href="#cache-dynamic-dependencies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cache dynamic dependencies</h3>
+<p>If you need to dynamically install certain dependencies during your job, and can’t pre-build them into a CI image for some reason, consider using GitLab’s cache between job runs. Take a look at the following example that demonstrates how to cache the node_modules directory between builds:</p>
+<pre><code class="hljs">example-job:
+  script:
+    - yarn install --frozen-lockfile --check-files
+  cache:
+    paths:
+      - node_modules/
+</code></pre>
+<p>Learn more about <a href="https://docs.gitlab.com/ee/ci/yaml/#cache">configuring GitLab’s cache</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="run-jobs-only-when-relevant-files-have-changed"></a><a href="#run-jobs-only-when-relevant-files-have-changed" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run jobs only when relevant files have changed</h3>
+<p>This is especially useful in monorepos where you may have multiple independent apps or microservices. If, for instance, you’ve only made changes to one front end app and not the others, why re-run tests for the ones that haven’t changed?</p>
+<p>To save time, think about conditionally running jobs by pairing the only:changes key with <a href="https://docs.gitlab.com/ee/ci/merge_request_pipelines/index.html">pipelines for merge requests</a>. Simply list the directories/files that need to change to necessitate running the job. Be sure to list anything that could possibly affect the job, including shared dependencies. Check out an example below:</p>
+<pre><code class="hljs">test-example1:
+  script:
+    - yarn --cwd apps/example1/ test
+  only:
+    changes:
+      - apps/example1/**/*
+      - shared-dependencies/**/*
+
+test-example2:
+  script:
+    - yarn --cwd apps/example2/ test
+  only:
+    changes:
+      - apps/example2/**/*
+      - shared-dependencies/**/*
+</code></pre>
+<p>Learn more about <a href="https://docs.gitlab.com/ee/ci/yaml/#onlychangesexceptchanges">using this feature</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="run-jobs-from-future-stages-early"></a><a href="#run-jobs-from-future-stages-early" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run jobs from future stages early</h3>
+<p>Stages are a great way to organize similar jobs, and most of the time, jobs in one stage won’t start running until all jobs from the previous stage have succeeded. But if you think about it, there are probably at least a few jobs in your pipeline that could safely run earlier without negatively impacting your project if they fail.</p>
+<p>For example, we frequently use <a href="https://www.chromaticqa.com/">Chromatic</a> to perform UI regression testing. These jobs happen at the end of our pipelines so that if they fail (i.e. visual changes are detected), they don’t block the pipeline from deploying changes to a review environment. But that’s really the only reason why they run so late in those pipelines.</p>
+<p>In these cases, consider using the needs key to specify a limited set of job(s) from an earlier stage that must pass before running a job in a future stage. Used effectively, particularly with slower jobs toward the end of your pipeline, you can shave off a considerable amount of time.</p>
+<p>Learn more about <a href="https://docs.gitlab.com/ee/ci/yaml/#needs">using the needs key</a>.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 5/16/2020 by Taki</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus/docs/en/qiita"><span class="arrow-prev">← </span><span>qiita</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1-host-your-own-gitlab-runner">1. Host your own GitLab runner</a></li><li><a href="#2-pre-install-dependencies">2. Pre-install dependencies</a></li><li><a href="#3-use-tiny-linux-distros-for-your-ci-images">3. Use tiny Linux distros for your CI images</a></li><li><a href="#4-use-the-overlay2-storage-driver">4. Use the overlay2 storage driver</a></li><li><a href="#5-use-a-cached-docker-image-when-building">5. Use a cached Docker image when building</a></li><li><a href="#6-thoughtfully-organize-your-dockerfiles">6. Thoughtfully organize your Dockerfiles</a></li><li><a href="#7-take-advantage-of-gitlabs-powerful-cicd-configuration-settings">7. Take advantage of GitLab’s powerful CI/CD configuration settings</a><ul class="toc-headings"><li><a href="#cache-dynamic-dependencies">Cache dynamic dependencies</a></li><li><a href="#run-jobs-only-when-relevant-files-have-changed">Run jobs only when relevant files have changed</a></li><li><a href="#run-jobs-from-future-stages-early">Run jobs from future stages early</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus/" class="nav-home"><img src="/docusaurus/img/favicon.ico" alt="baby-degu" width="66" height="58"/></a><div><h5>Categories</h5><a href="https://qiita.com/baby-degu">Qiita</a><a href="https://www.udemy.com/user/baby-degu/">Udemy</a><a href="/docusaurus/docs/en/dao.html">DAO</a></div><div><h5>Community</h5><a href="/docusaurus/en/pioneers.html">Pioneers</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/babydegu" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/docusaurus/blog">Blog</a><a href="https://github.com/baby-degu">GitHub</a><a class="github-button" href="https://github.com/baby-degu/docusaurus" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><div class="social"><a href="https://twitter.com/babydegu" class="twitter-follow-button">Follow @babydegu</a></div></div></section><section class="copyright">Copyright © 2020 baby-degu</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

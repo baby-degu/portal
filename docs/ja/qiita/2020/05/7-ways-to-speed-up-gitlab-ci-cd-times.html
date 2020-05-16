@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>GitLab CI / CDの時間を短縮する7つの方法 · baby-degu</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="CI/CDプラットフォームとして、スピードは開発の効率化に重要です。最近、私たちはCIのジョブを取り上げて、可能な限り早くするためにリファクタリングをしました。"/><meta name="docsearch:language" content="ja"/><meta property="og:title" content="GitLab CI / CDの時間を短縮する7つの方法 · baby-degu"/><meta property="og:type" content="website"/><meta property="og:url" content="https://baby-degu.github.io/docusaurus/"/><meta property="og:description" content="CI/CDプラットフォームとして、スピードは開発の効率化に重要です。最近、私たちはCIのジョブを取り上げて、可能な限り早くするためにリファクタリングをしました。"/><meta property="og:image" content="https://baby-degu.github.io/docusaurus/img/baby-degu.jpg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://baby-degu.github.io/docusaurus/img/baby-degu.jpg"/><link rel="shortcut icon" href="/docusaurus/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://baby-degu.github.io/docusaurus/blog/atom.xml" title="baby-degu Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://baby-degu.github.io/docusaurus/blog/feed.xml" title="baby-degu Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docusaurus/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus/css/main.css"/><script src="/docusaurus/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus/ja"><img class="logo" src="/docusaurus/img/baby-degu.jpg" alt="baby-degu"/><h2 class="headerTitleWithLogo">baby-degu</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docusaurus/docs/ja/qiita" target="_self">文書</a></li><li class=""><a href="/docusaurus/docs/ja/dao" target="_self">DAO</a></li><li class=""><a href="/docusaurus/ja/pioneers" target="_self">パイオニア</a></li><li class=""><a href="https://github.com/baby-degu/docusaurus" target="_blank">Github</a></li><li class=""><a href="/docusaurus/blog/" target="_self">ブログ</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docusaurus/img/language.svg" alt="Languages icon"/>日本語</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docusaurus/docs/en/qiita/2020/05/7-ways-to-speed-up-gitlab-ci-cd-times">English</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>記事</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">索引</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus/docs/ja/qiita">Qiita</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">記事</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus/docs/ja/qiita/2020/05/7-ways-to-speed-up-gitlab-ci-cd-times">GitLab CI / CDの時間を短縮する7つの方法</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">GitLab CI / CDの時間を短縮する7つの方法</h1></header><article><div><span><p>CI/CDプラットフォームとして、スピードは開発の効率化に重要です。最近、私たちはCIのジョブを取り上げて、可能な限り早くするためにリファクタリングをしました。
+以下に同じことができる方法を紹介します。</p>
+<h1><a class="anchor" aria-hidden="true" id="1gitlab-runnerをホストする"></a><a href="#1gitlab-runnerをホストする" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.GitLab Runnerをホストする</h1>
+<p>(SaaS版GitLabで提供されている)GitLab.comは、リポジトリで使用するためのShared Runnerというツールを提供しています。すぐに軌道に乗るためには素晴らしいことですが、GitLab Runnerをホストすることで、単一の最大の速度の向上があったことを発見しました。実はボトルネックはCPUやRAMではなく、ネットワークだったのです。プライベートクラウドのサーバー上では、ネットワークは劇的に速くなります。私たちは、DigitalOceanとGoogle Cloud Platformの両方で、速度が2倍になることを常に気付いていました。</p>
+<p>ネットワーク速度は、ビルドとデプロイにおいては特に重要です。ビルドはよくライブラリや依存関係、Dockerイメージなどのダウンロードが必要になり、デプロイは他の場所にアセットをアップロードする必要があります。GitLabのShared Runnerでネットワークが混雑した時、これらのステージは非常に遅く感じます。</p>
+<p>幸い、Runnerのセットアップは実に簡単です！<a href="https://www.digitalocean.com/">DigitalOcean</a>や<a href="https://aws.amazon.com/">AWS</a>,<a href="https://cloud.google.com/">GCP</a>のサーバをあっという間に立ち上げて、GitLabのRunner をLinuxにインストールすることができます。あとは<a href="https://docs.gitlab.com/runner/install/linux-repository.html">これらの手順</a>に従うだけです。</p>
+<h1><a class="anchor" aria-hidden="true" id="2依存関係のプリインストール"></a><a href="#2依存関係のプリインストール" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.依存関係のプリインストール</h1>
+<p>これも大きな方法の一つです。もしCIジョブのたびに依存関係をインストールしているのなら、時間を無駄にしていると言えるでしょう。代わりに、CIジョブに必要な依存関係を全てインストールされたDockerイメージを使用するべきです。</p>
+<p>必要な依存関係が全て含まれたイメージが見つからない場合は、イメージをプレビルドし、GitLab Runnerがアクセスできるコンテナレジストリに保管するべきです。(私たちはGitLabの<a href="https://docs.gitlab.com/ee/user/project/container_registry.html">ビルドインのコンテナレジストリ</a>を使うことを好んでいます。)</p>
+<h1><a class="anchor" aria-hidden="true" id="3-ciイメージに小さいlinuxディストリビューションを使用する"></a><a href="#3-ciイメージに小さいlinuxディストリビューションを使用する" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. CIイメージに小さいLinuxディストリビューションを使用する</h1>
+<p>可能であれば、CIジョブを実行するイメージには小さいLinuxディストリビューションを使用しましょう。<a href="https://alpinelinux.org/">Alpine Linux</a>がおそらくもっともポピュラーな選択肢ですが、他にもあります。</p>
+<p>なぜ小さいLinuxディストリビューションを使用するのでしょうか？CIジョブは、いくつかのテストを実行したり、いくつかのビルドコマンドを実行するためにUbuntuのような肥大化したディストリビューションを必要としないことです。そのため、30倍から40倍のサイズのイメージをダウンロードすることに時間を浪費してはいけません。</p>
+<h1><a class="anchor" aria-hidden="true" id="4-overlay2-ストレージドライバを使用する"></a><a href="#4-overlay2-ストレージドライバを使用する" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Overlay2 ストレージドライバを使用する</h1>
+<p>CIの速度を上げる単一でもっとも簡単な方法は、デフォルトのVFS ドライバ(詳しく見る)の代わりにOverlay2 Docker ストレージドライバを使用することです。gitlab-ci.ymlファイルの一番上に以下のコードを追加するだけで使用できます。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">variables:</span>
+  <span class="hljs-attr">DOCKER_DRIVER:</span> <span class="hljs-string">overlay2</span>
+</code></pre>
+<p>数秒の余分な時間が短縮できることがわかったので、OverlayではなくOverlay2を使用していることを確認してください。</p>
+<p>あるいは、Runnerをホストしていて、<code>config.toml</code>ファイルへアクセスできる場合は、<code>[[runners]]</code>(<a href="https://docs.gitlab.com/ce/ci/docker/using_docker_build.html#using-the-overlayfs-driver">詳しくはこちら</a>)に以下のコードを加えることで自動的にこのドライバをすべてのプロジェクトで有効にすることができます。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-string">environment</span> <span class="hljs-string">=</span> <span class="hljs-string">["DOCKER_DRIVER=overlay2"]</span>
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="5-ビルド時にキャッシュされたdockerイメージを使用する"></a><a href="#5-ビルド時にキャッシュされたdockerイメージを使用する" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. ビルド時にキャッシュされたDockerイメージを使用する</h1>
+<p>Dockerはスマートです。ビルドキャッシュを使用して、変更されたレイヤーのみをビルドすることで、イメージのビルド時間を大幅に短縮します。しかし、もしDockerが過去のビルドが見つからなければ(CIジョブを実行するたびにクリーンな状態で使用している場合に発生します)、毎回イメージを1から作成することになります。</p>
+<p>これを直すためには、単純に<code>--cache-from</code>オプション(Docker v1.13で追加されました)で、Dockerにイメージがビルドされた場所を指定してください。より詳しい<code>docker build</code>コマンドのビルドオプションは<a href="https://docs.docker.com/edge/engine/reference/commandline/build/#options">こちら</a>からご覧ください。</p>
+<h1><a class="anchor" aria-hidden="true" id="6-dockerfileをよく検討して整理する"></a><a href="#6-dockerfileをよく検討して整理する" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6. Dockerfileをよく検討して整理する</h1>
+<p>Dockerのビルドキャッシュといえば、それがどのように機能するかを熟知しておく必要があります。一言にまとめると、 各命令はレイヤーであり、各レイヤーが変更された場合、またはその前のレイヤーが変更された場合にのみ再ビルドされます。「変化」を構成するものは、それがどのような命令であるかによって異なります。より詳しい情報は<a href="https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#build-cache">こちら</a>から見ることができます。</p>
+<p>重要なのは、本当に変更されていない命令を不必要に実行したくないということです。例えば、以下のようにNginxがインストールされたコンテナをもっていたとします。</p>
+<pre><code class="hljs"><span class="hljs-builtin-name">RUN</span> apt-<span class="hljs-builtin-name">get</span> -y update &amp;&amp; \
+    apt-<span class="hljs-builtin-name">get</span> -y install nginx
+</code></pre>
+<p>おそらく、（例えば、以下の記述されたコードのように）ソースファイルをコピーする命令を、Nginxをインストールする命令の前に置きたくないでしょう。</p>
+<pre><code class="hljs"><span class="hljs-keyword">COPY</span><span class="bash"> <span class="hljs-built_in">source</span>/ /usr/share/nginx/html</span>
+</code></pre>
+<p>どうしてでしょうか？ほとんどの場合、ソースを変更した時にDockerにNginxを再インストールする必要がないからです。ビルドも遅くなってしまいます。</p>
+<h1><a class="anchor" aria-hidden="true" id="7gitlabの強力な設定の利点を生かす"></a><a href="#7gitlabの強力な設定の利点を生かす" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>7.GitLabの強力な設定の利点を生かす</h1>
+<p>GitLabには3つの便利な機能があります。適切に利用できれば、パイプラインを大幅に高速化することができます。</p>
+<h2><a class="anchor" aria-hidden="true" id="動的に依存関係をキャッシュする"></a><a href="#動的に依存関係をキャッシュする" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>動的に依存関係をキャッシュする</h2>
+<p>ジョブの実行中に動的に依存関係をインストールする必要がある場合や、いくつかの理由でCIイメージをプレビルドができない場合は、GitLab のキャッシュをジョブ間で使用することを検討してください。ビルド間でnode_modulesディレクトリをキャッシュする方法を以下のデモンストレーションで見てみましょう。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">example-job:</span>
+  <span class="hljs-attr">script:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-string">yarn</span> <span class="hljs-string">install</span> <span class="hljs-string">--frozen-lockfile</span> <span class="hljs-string">--check-files</span>
+  <span class="hljs-attr">cache:</span>
+    <span class="hljs-attr">paths:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">node_modules/</span>
+</code></pre>
+<p>詳細なGitLabのキャッシュの設定については<a href="https://docs.gitlab.com/ee/ci/yaml/#cache">こちら</a>からご覧ください。</p>
+<h2><a class="anchor" aria-hidden="true" id="関連ファイルが変更された場合のみジョブを実行する"></a><a href="#関連ファイルが変更された場合のみジョブを実行する" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>関連ファイルが変更された場合のみジョブを実行する</h2>
+<p>特に依存しない複数のアプリやマイクロサービスを単一のレポジトリで運用している場合に便利です。例えば、一つのフロントエンドのアプリを変更し、他には変更を加えていない場合に変更していないアプリにテストを実行する理由はありますでしょうか？</p>
+<p>時間を節約するために、<a href="https://docs.gitlab.com/ee/ci/merge_request_pipelines/index.html">マージリクエストのパイプライン</a>と <code>only:changes</code> キーをペアにして、条件付きでジョブを実行することを検討してみてください。必要なジョブの実行に、変更が必要なディレクトリ/ファイルをリストアップします。共有されている依存関係も含めて、ジョブに影響を与える可能性のあるものをリストアップしてください。
+以下の例を確認してみましょう。</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">test-example1:</span>
+  <span class="hljs-attr">script:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-string">yarn</span> <span class="hljs-string">--cwd</span> <span class="hljs-string">apps/example1/</span> <span class="hljs-string">test</span>
+  <span class="hljs-attr">only:</span>
+    <span class="hljs-attr">changes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">apps/example1/**/*</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">shared-dependencies/**/*</span>
+<span class="hljs-attr">test-example2:</span>
+  <span class="hljs-attr">script:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-string">yarn</span> <span class="hljs-string">--cwd</span> <span class="hljs-string">apps/example2/</span> <span class="hljs-string">test</span>
+  <span class="hljs-attr">only:</span>
+    <span class="hljs-attr">changes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">apps/example2/**/*</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">shared-dependencies/**/*</span>
+</code></pre>
+<p>この機能の利用に関するより詳細な情報は<a href="https://docs.gitlab.com/ee/ci/yaml/#onlychangesexceptchanges">こちら</a>をご覧ください。</p>
+<h2><a class="anchor" aria-hidden="true" id="将来のステージから早期にジョブを実行する"></a><a href="#将来のステージから早期にジョブを実行する" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>将来のステージから早期にジョブを実行する</h2>
+<p>ステージは似たようなジョブを整理するのに最適な方法で、ほとんどの場合、ステージのジョブは前のステージのジョブがすべて成功するまで実行されません。しかし、考えてみれば、中には、失敗してもプロジェクトに悪影響を与えずに安全に早期に実行できるジョブが少なくともいくつかあるでしょう。</p>
+<p>例えば、私たちはよくUIのリグレッションテストにChromaticを使用します。これらのジョブはパイプラインの最後に発生するので、失敗しても（例: 視覚的な変更が検出されても）、パイプラインがレビュー環境に変更を展開するのを妨げることはありません。しかし、それがパイプラインで実行が遅くなってしまう唯一の理由です。</p>
+<p>これらのケースでは、<code>needs</code>キーを使用することを検討してください。それは、将来のステージでジョブを実行する前に処理する必要がある、以前のステージからの限定されたジョブのセットを指定するためです。効率的に使用すれば、特にパイプラインの終わりに向かって実行されている遅いジョブについては、かなりの時間を削減することができます。</p>
+<p><code>needs</code>キーの利用に関するより詳細な情報は<a href="https://docs.gitlab.com/ee/ci/yaml/#needs">こちら</a>をご覧ください。</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 5/16/2020 by Taki</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus/docs/ja/qiita"><span class="arrow-prev">← </span><span>Qiita</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#動的に依存関係をキャッシュする">動的に依存関係をキャッシュする</a></li><li><a href="#関連ファイルが変更された場合のみジョブを実行する">関連ファイルが変更された場合のみジョブを実行する</a></li><li><a href="#将来のステージから早期にジョブを実行する">将来のステージから早期にジョブを実行する</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus/" class="nav-home"><img src="/docusaurus/img/favicon.ico" alt="baby-degu" width="66" height="58"/></a><div><h5>Categories</h5><a href="https://qiita.com/baby-degu">Qiita</a><a href="https://www.udemy.com/user/baby-degu/">Udemy</a><a href="/docusaurus/docs/ja/dao.html">DAO</a></div><div><h5>Community</h5><a href="/docusaurus/ja/pioneers.html">Pioneers</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/babydegu" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/docusaurus/blog">Blog</a><a href="https://github.com/baby-degu">GitHub</a><a class="github-button" href="https://github.com/baby-degu/docusaurus" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><div class="social"><a href="https://twitter.com/babydegu" class="twitter-follow-button">Follow @babydegu</a></div></div></section><section class="copyright">Copyright © 2020 baby-degu</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
