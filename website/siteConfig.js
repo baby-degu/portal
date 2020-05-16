@@ -91,7 +91,7 @@ const siteConfig = {
 
 	// Open Graph and Twitter card images.
 	twitter: true,
-	twitterUsername: 'baby-degu',
+	twitterUsername: 'babydegu',
 	ogImage: 'img/baby-degu.jpg',
 	twitterImage: 'img/baby-degu.jpg',
 
