@@ -12,15 +12,15 @@ const CompLibrary = require('../../core/CompLibrary.js')
 const Container = CompLibrary.Container
 const translate = require('../../server/translate.js').translate
 
-class Users extends React.Component {
+class Pioneers extends React.Component {
 	render() {
 		const { config: siteConfig } = this.props
-		if ((siteConfig.users || []).length === 0) {
+		if ((siteConfig.pioneers || []).length === 0) {
 			return null
 		}
 
 		const editUrl = `${siteConfig.repoUrl}/edit/master/website/siteConfig.js`
-		const showcase = siteConfig.users.map((user) => (
+		const showcase = siteConfig.pioneers.map((user) => (
 			<a href={user.infoLink} key={user.infoLink}>
 				<img src={user.image} alt={user.caption} title={user.caption} />
 			</a>
@@ -32,19 +32,19 @@ class Users extends React.Component {
 					<div className="showcaseSection">
 						<div className="prose">
 							<h1>
-								<translate>Who is Using This?</translate>
+								Who inspires us?
 							</h1>
 							<p>
-								<translate>This project is used by many folks</translate>
+								Thank you for leading!
 							</p>
 						</div>
 						<div className="logos">{showcase}</div>
 						<p>
-							<translate>Are you using this project?</translate>
+							Please check their website too!:)
 						</p>
-						<a href={editUrl} className="button">
+						{/* <a href={editUrl} className="button">
 							<translate>Add your company</translate>
-						</a>
+						</a> */}
 					</div>
 				</Container>
 			</div>
@@ -52,4 +52,4 @@ class Users extends React.Component {
 	}
 }
 
-module.exports = Users
+module.exports = Pioneers
