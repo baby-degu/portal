@@ -4,60 +4,21 @@
         <title>baby-degu Blog</title>
         <link>https://baby-degu.github.io/docusaurus/blog</link>
         <description>The best place to stay up-to-date with the latest baby-degu news and events.</description>
-        <lastBuildDate>Mon, 04 May 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 May 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>baby-degu Blog</title>
-            <url>https://baby-degu.github.io/docusaurus/img/FullColor_IconOnly_1024x1024_72dpi_whitespace2.jpg</url>
+            <url>https://baby-degu.github.io/docusaurus/img/baby-degu.jpg</url>
             <link>https://baby-degu.github.io/docusaurus/blog</link>
         </image>
         <copyright>Copyright © 2020 Your Name or Your Company Name</copyright>
         <item>
-            <title><![CDATA[7 ways to speed up your GitLab CI/CD times]]></title>
-            <link>https://baby-degu.github.io/docusaurus/blog/2020/05/04/7-ways-to-speed-up-gitlab-ci-cd-times.html</link>
-            <guid>https://baby-degu.github.io/docusaurus/blog/2020/05/04/7-ways-to-speed-up-gitlab-ci-cd-times.html</guid>
-            <pubDate>Mon, 04 May 2020 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>As with any continuous integration and deployment platform, speed is crucial for developer efficiency. Recently we took our CI jobs and refactored them to ensure they were as fast as possible. Here’s how you can do the same:</p> <ol> <li>Host your own GitLab run...</li></ol>]]></description>
-        </item>
-        <item>
-            <title><![CDATA[New Version 1.0.0]]></title>
-            <link>https://baby-degu.github.io/docusaurus/blog/2017/10/24/new-version-1.0.0.html</link>
-            <guid>https://baby-degu.github.io/docusaurus/blog/2017/10/24/new-version-1.0.0.html</guid>
-            <pubDate>Tue, 24 Oct 2017 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>This blog post will test file name parsing issues when periods are present.</p> ]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Adding RSS Support]]></title>
-            <link>https://baby-degu.github.io/docusaurus/blog/2017/09/26/adding-rss.html</link>
-            <guid>https://baby-degu.github.io/docusaurus/blog/2017/09/26/adding-rss.html</guid>
-            <pubDate>Tue, 26 Sep 2017 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>This is a test post.</p> <p>A whole bunch of other information.</p> ]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Adding RSS Support - RSS Truncation Test]]></title>
-            <link>https://baby-degu.github.io/docusaurus/blog/2017/09/25/testing-rss.html</link>
-            <guid>https://baby-degu.github.io/docusaurus/blog/2017/09/25/testing-rss.html</guid>
-            <pubDate>Mon, 25 Sep 2017 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890</p>
-<p>This should be truncated.</p>
-]]></description>
-        </item>
-        <item>
-            <title><![CDATA[New Blog Post]]></title>
-            <link>https://baby-degu.github.io/docusaurus/blog/2017/04/10/blog-post-two.html</link>
-            <guid>https://baby-degu.github.io/docusaurus/blog/2017/04/10/blog-post-two.html</guid>
-            <pubDate>Mon, 10 Apr 2017 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
-]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Blog Title]]></title>
-            <link>https://baby-degu.github.io/docusaurus/blog/2016/03/11/blog-post.html</link>
-            <guid>https://baby-degu.github.io/docusaurus/blog/2016/03/11/blog-post.html</guid>
-            <pubDate>Fri, 11 Mar 2016 06:00:00 GMT</pubDate>
-            <description><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.</p>
-]]></description>
+            <title><![CDATA[Limitation Of Centralization]]></title>
+            <link>https://baby-degu.github.io/docusaurus/blog/2020/05/16/limitation-of-centralization.html</link>
+            <guid>https://baby-degu.github.io/docusaurus/blog/2020/05/16/limitation-of-centralization.html</guid>
+            <pubDate>Sat, 16 May 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>This is an initial post for testing.</p> ]]></description>
         </item>
     </channel>
 </rss>
