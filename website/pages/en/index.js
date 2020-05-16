@@ -138,7 +138,7 @@ class Index extends React.Component {
 		)
 
 		const Features = () => (
-			<Block layout="fourColumn">
+			<Block layout="fourColumn" background="light">
 				{[
 					{
 						content: 'This is the content of my feature',
@@ -151,6 +151,12 @@ class Index extends React.Component {
 						image: `${baseUrl}img/undraw_operating_system.svg`,
 						imageAlign: 'top',
 						title: 'Feature Two',
+					},
+					{
+						content: 'This is the content of my feature',
+						image: `${baseUrl}img/undraw_react.svg`,
+						imageAlign: 'top',
+						title: 'Feature One',
 					},
 				]}
 			</Block>
@@ -172,7 +178,7 @@ class Index extends React.Component {
 			const pageUrl = (page) => baseUrl + (language ? `${language}/` : '') + page
 
 			return (
-				<div className="productShowcaseSection paddingBottom">
+				<div className="productShowcaseSection paddingTop">
 					<h2>
 						Who inspires us?
 					</h2>
@@ -194,10 +200,10 @@ class Index extends React.Component {
 				<HomeSplash siteConfig={siteConfig} language={language} />
 				<div className="mainContainer">
 					<Features />
-					<FeatureCallout />
-					<LearnHow />
-					<TryOut />
-					<Description />
+					{/* <FeatureCallout /> */}
+					{/* <LearnHow /> */}
+					{/* <TryOut /> */}
+					{/* <Description /> */}
 					<Showcase />
 				</div>
 			</div>
