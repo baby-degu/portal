@@ -4,7 +4,10 @@
     "First Category": ["doc2"],
     "Second Category": ["doc3"]
   },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+  "Qiita": {
+    "Overview": ["qiita"]
+  },
+  "DAO": {
+    "Overview": ["dao"]
   }
 }

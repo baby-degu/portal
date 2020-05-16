@@ -47,8 +47,8 @@ const siteConfig = {
 
 	// For no header links in the top nav bar -> headerLinks: [],
 	headerLinks: [
-		{ doc: 'doc1', label: 'Docs' },
-		{ doc: 'doc4', label: 'API' },
+		{ doc: 'qiita', label: 'Docs' },
+		{ doc: 'dao', label: 'DAO' },
 		{ page: 'pioneers', label: 'Pioneers' },
 		{ href: 'https://github.com/baby-degu/docusaurus', label: 'Github', external: true },
 		{ blog: true, label: 'Blog' },

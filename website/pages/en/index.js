@@ -65,9 +65,9 @@ class HomeSplash extends React.Component {
 				<div className="inner">
 					<ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
 					<PromoSection>
-						<Button href="#try">Try It Out</Button>
-						<Button href={docUrl('doc1.html')}>Example Link</Button>
-						<Button href={docUrl('doc2.html')}>Example Link 2</Button>
+						<Button href="https://qiita.com/baby-degu">Qiita</Button>
+						<Button href="https://www.udemy.com/user/baby-degu/">Udemy</Button>
+						<Button href={docUrl('dao.html')}>DAO</Button>
 					</PromoSection>
 				</div>
 			</SplashContainer>
@@ -138,20 +138,26 @@ class Index extends React.Component {
 		)
 
 		const Features = () => (
-			<Block layout="fourColumn">
+			<Block layout="fourColumn" background="light">
 				{[
 					{
-						content: 'This is the content of my feature',
-						image: `${baseUrl}img/undraw_react.svg`,
+						content: 'Openness mitigates the learning-curve of newcomers. Think globally. Optimize globally.',
+						image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
 						imageAlign: 'top',
-						title: 'Feature One',
+						title: 'Make it open',
 					},
 					{
-						content: 'The content of my second feature',
-						image: `${baseUrl}img/undraw_operating_system.svg`,
+						content: 'Let\'s think about how we can keep the flat organization. Flat gives reliability. Flat means minimizing the information gap.',
+						image: `${baseUrl}img/undraw_open_source.svg`,
 						imageAlign: 'top',
-						title: 'Feature Two',
+						title: 'Keep flat',
 					},
+					{
+						content: 'You don\'t trust code? Then create a trustable code. Or the system. Think about the future.',
+						image: `${baseUrl}img/undraw_code_review.svg`,
+						imageAlign: 'top',
+						title: 'Code first',
+					}
 				]}
 			</Block>
 		)
@@ -172,7 +178,7 @@ class Index extends React.Component {
 			const pageUrl = (page) => baseUrl + (language ? `${language}/` : '') + page
 
 			return (
-				<div className="productShowcaseSection paddingBottom">
+				<div className="productShowcaseSection paddingTop">
 					<h2>
 						Who inspires us?
 					</h2>
@@ -194,10 +200,10 @@ class Index extends React.Component {
 				<HomeSplash siteConfig={siteConfig} language={language} />
 				<div className="mainContainer">
 					<Features />
-					<FeatureCallout />
-					<LearnHow />
-					<TryOut />
-					<Description />
+					{/* <FeatureCallout /> */}
+					{/* <LearnHow /> */}
+					{/* <TryOut /> */}
+					{/* <Description /> */}
 					<Showcase />
 				</div>
 			</div>

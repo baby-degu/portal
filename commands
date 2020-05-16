@@ -1,0 +1,6 @@
+
+Deploy
+
+GIT_USER=nottakis \
+  CURRENT_BRANCH=master \
+  yarn run publish-gh-pages
