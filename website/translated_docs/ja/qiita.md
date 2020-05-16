@@ -1,7 +1,7 @@
 ---
-id: Qiita
-title: キイタ
-sidebar_label: Qiita
+id: qiita
+title: Qiita
+sidebar_label: qiita
 ---
 
 これは、テスト用の最初のQiitaドキュメントです。
