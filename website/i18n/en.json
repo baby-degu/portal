@@ -5,9 +5,6 @@
     "previous": "Previous",
     "tagline": "Let's seek out what we can do",
     "docs": {
-      "2020-05-04-7-ways-to-speed-up-gitlab-ci-cd-times": {
-        "title": "7 ways to speed up your GitLab CI/CD times"
-      },
       "dao": {
         "title": "DAO",
         "sidebar_label": "dao"
@@ -25,6 +22,9 @@
       "qiita": {
         "title": "Qiita",
         "sidebar_label": "qiita"
+      },
+      "qiita/2020/05/7-ways-to-speed-up-gitlab-ci-cd-times": {
+        "title": "7 ways to speed up your GitLab CI/CD times"
       }
     },
     "links": {
@@ -38,7 +38,8 @@
       "Docusaurus": "Docusaurus",
       "First Category": "First Category",
       "Second Category": "Second Category",
-      "Overview": "Overview"
+      "Index": "Index",
+      "Articles": "Articles"
     }
   },
   "pages-strings": {
