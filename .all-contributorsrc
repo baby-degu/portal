@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ryuckel",
+      "name": "ryuckel",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/36391432?v=4",
+      "profile": "https://peaceful-mcclintock-c87ee2.netlify.app/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "docusaurus",
+  "projectOwner": "baby-degu",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
