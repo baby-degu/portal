@@ -1,7 +1,7 @@
 ---
-id: ダオ
+id: dao
 title: DAO
-sidebar_label: ダオ
+sidebar_label: dao
 ---
 
 これはテスト用の最初のDAOドキュメントです。 
