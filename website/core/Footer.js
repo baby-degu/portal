@@ -37,10 +37,10 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Categories</h5>
-            <a href="https://qiita.com/baby-degu">
+            <a href={this.docUrl('qiita.html', this.props.language)}>
               Qiita
             </a>
-            <a href="https://www.udemy.com/user/baby-degu/">
+            <a href={this.docUrl('udemy.html', this.props.language)}>
               Udemy
             </a>
             <a href={this.docUrl('dao.html', this.props.language)}>
@@ -49,16 +49,16 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Community</h5>
-            <a href={this.pageUrl('pioneers.html', this.props.language)}>
+            {/* <a href={this.pageUrl('pioneers.html', this.props.language)}>
               Pioneers
-            </a>
+            </a> */}
             {/* <a
               href="https://stackoverflow.com/questions/tagged/"
               target="_blank"
               rel="noreferrer noopener">
               Stack Overflow
             </a> */}
-            <a href="https://discordapp.com/">Project Chat</a>
+            {/* <a href="https://discordapp.com/">Project Chat</a> */}
             <a
               href="https://twitter.com/babydegu"
               target="_blank"
