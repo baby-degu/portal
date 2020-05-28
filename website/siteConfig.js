@@ -58,8 +58,8 @@ const siteConfig = {
 	pioneers,
 
 	/* path to images for header/footer */
-	headerIcon: 'img/baby-degu.jpg',
-	footerIcon: 'img/favicon.ico',
+	headerIcon: '',
+	footerIcon: '',
 	favicon: 'img/favicon.ico',
 
 	/* Colors for website */
