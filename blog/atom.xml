@@ -2,12 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://baby-degu.github.io/docusaurus/blog</id>
     <title>baby-degu Blog</title>
-    <updated>2020-05-16T06:00:00.000Z</updated>
+    <updated>2020-05-31T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://baby-degu.github.io/docusaurus/blog"/>
     <subtitle>The best place to stay up-to-date with the latest baby-degu news and events.</subtitle>
     <logo>https://baby-degu.github.io/docusaurus/img/baby-degu.jpg</logo>
     <rights>Copyright © 2020 baby-degu</rights>
+    <entry>
+        <title type="html"><![CDATA[Upgrade Slack To Standard Plan]]></title>
+        <id>https://baby-degu.github.io/docusaurus/blog/2020/05/31/upgrade-slack-to-standard-plan.html</id>
+        <link href="https://baby-degu.github.io/docusaurus/blog/2020/05/31/upgrade-slack-to-standard-plan.html"/>
+        <updated>2020-05-31T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>Today, I've upgraded Slack to paid plan.</p> <p>There are 34 members, including Inactive and Active. Because of the historic reason, the inner motivations of members are different. It brings the difficulty to have a consensus and leading the community one s...</p>]]></summary>
+        <author>
+            <name>Taki (Takeaki Kawai)</name>
+            <email/>
+            <uri>https://github.com/nottakis</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Limitation Of Centralization]]></title>
         <id>https://baby-degu.github.io/docusaurus/blog/2020/05/16/limitation-of-centralization.html</id>
