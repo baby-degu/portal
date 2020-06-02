@@ -1,0 +1,34 @@
+# Cf. Example using yarn
+# https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions#example-using-yarn
+
+on:
+  push:
+    branches:
+      - master
+name: Deploy master branch
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '8.x'
+    - name: Deploying to GitHub Pages
+      run: |
+        git config --global user.email "<GITHUB_USERNAME>@users.noreply.github.com"
+        git config --global user.name "<YOUR_NAME>"
+        echo "machine github.com login <GITHUB_USERNAME> password $GITHUB_TOKEN" > ~/.netrc
+        # install Docusaurus and generate file of English strings
+        - cd website && yarn install && yarn run write-translations && cd ..
+        # crowdin install
+        - sudo apt-get install default-jre
+        - wget https://artifacts.crowdin.com/repo/deb/crowdin.deb -O crowdin.deb
+        - sudo dpkg -i crowdin.deb
+        # translations upload/download
+        - crowdin --config crowdin.yaml upload sources --auto-update -b master
+        - crowdin --config crowdin.yaml download -b master
+        # build and publish website
+        cd website && GIT_USER=<GIT_USER> yarn run publish-gh-pages
