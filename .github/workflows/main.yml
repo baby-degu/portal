@@ -34,5 +34,8 @@ jobs:
       run: |
         crowdin --config crowdin.yaml upload sources --auto-update -b master
         crowdin --config crowdin.yaml download -b master
+      env:
+        CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+        CROWDIN_API_KEY: ${{ secrets.CROWDIN_API_KEY }}
     - name: build and publish website
       run: cd website && GIT_USER=chore yarn run publish-gh-pages
