@@ -1,0 +1,40 @@
+
+aliases:
+ - &filter-only-master
+   branches:
+     only:
+       - master
+
+version: 2
+jobs:
+  deploy-website:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:8.11.1
+
+    steps:
+      - checkout
+      - run:
+          name: Deploying to GitHub Pages
+          command: |
+            git config --global user.email "<GITHUB_USERNAME>@users.noreply.github.com"
+            git config --global user.name "<YOUR_NAME>"
+            echo "machine github.com login <GITHUB_USERNAME> password $GITHUB_TOKEN" > ~/.netrc
+            # install Docusaurus and generate file of English strings
+            - cd website && yarn install && yarn run write-translations && cd ..
+            # crowdin install
+            - sudo apt-get install default-jre
+            - wget https://artifacts.crowdin.com/repo/deb/crowdin.deb -O crowdin.deb
+            - sudo dpkg -i crowdin.deb
+            # translations upload/download
+            - crowdin --config crowdin.yaml upload sources --auto-update -b master
+            - crowdin --config crowdin.yaml download -b master
+            # build and publish website
+            cd website && GIT_USER=<GIT_USER> yarn run publish-gh-pages
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - deploy-website:
+        filters: *filter-only-master
