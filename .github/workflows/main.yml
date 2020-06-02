@@ -18,9 +18,9 @@ jobs:
         node-version: '8.x'
     - name: Deploying to GitHub Pages
       run: |
-        git config --global user.email "<GITHUB_USERNAME>@users.noreply.github.com"
-        git config --global user.name "<YOUR_NAME>"
-        echo "machine github.com login <GITHUB_USERNAME> password $GITHUB_TOKEN" > ~/.netrc
+        git config --global user.email "chore@noreply.babydegu.com"
+        git config --global user.name "chore"
+        echo "machine github.com login chore password $GITHUB_TOKEN" > ~/.netrc
         # install Docusaurus and generate file of English strings
         - cd website && yarn install && yarn run write-translations && cd ..
         # crowdin install
@@ -31,4 +31,4 @@ jobs:
         - crowdin --config crowdin.yaml upload sources --auto-update -b master
         - crowdin --config crowdin.yaml download -b master
         # build and publish website
-        cd website && GIT_USER=<GIT_USER> yarn run publish-gh-pages
+        cd website && GIT_USER=chore yarn run publish-gh-pages
