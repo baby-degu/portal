@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: '8.x'
     - name: Deploying to GitHub Pages
-    - run: |
+      run: |
         git config --global user.email "chore@noreply.babydegu.com"
         git config --global user.name "chore"
         echo "machine github.com login chore password $GITHUB_TOKEN" > ~/.netrc
