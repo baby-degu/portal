@@ -1,5 +1,7 @@
 # Cf. Example using yarn
 # https://help.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions#example-using-yarn
+# Cf. Using CI
+# https://help.github.com/en/actions/reference/workflow-commands-for-github-actions
 
 on:
   push:
@@ -17,18 +19,18 @@ jobs:
       with:
         node-version: '8.x'
     - name: Deploying to GitHub Pages
-      run: |
+    - run: |
         git config --global user.email "chore@noreply.babydegu.com"
         git config --global user.name "chore"
         echo "machine github.com login chore password $GITHUB_TOKEN" > ~/.netrc
-        # install Docusaurus and generate file of English strings
-        - cd website && yarn install && yarn run write-translations && cd ..
-        # crowdin install
-        - sudo apt-get install default-jre
-        - wget https://artifacts.crowdin.com/repo/deb/crowdin.deb -O crowdin.deb
-        - sudo dpkg -i crowdin.deb
-        # translations upload/download
-        - crowdin --config crowdin.yaml upload sources --auto-update -b master
-        - crowdin --config crowdin.yaml download -b master
-        # build and publish website
-        cd website && GIT_USER=chore yarn run publish-gh-pages
+    # install Docusaurus and generate file of English strings
+    - run: cd website && yarn install && yarn run write-translations && cd ..
+    # crowdin install
+    - run: sudo apt-get install default-jre
+    - run: wget https://artifacts.crowdin.com/repo/deb/crowdin.deb -O crowdin.deb
+    - run: sudo dpkg -i crowdin.deb
+    # translations upload/download
+    - run: crowdin --config crowdin.yaml upload sources --auto-update -b master
+    - run: crowdin --config crowdin.yaml download -b master
+    # build and publish website
+    - run: cd website && GIT_USER=chore yarn run publish-gh-pages
