@@ -117,6 +117,9 @@ const siteConfig = {
 	// You may provide arbitrary config keys to be used as needed by your
 	// template. For example, if you need your repo's URL...
 	repoUrl: 'https://github.com/baby-degu/docusaurus',
+
+	// Add cname
+	cname: 'babydegu.com'
 };
 
 module.exports = siteConfig;
