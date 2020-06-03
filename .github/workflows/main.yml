@@ -34,9 +34,11 @@ jobs:
         CROWDIN_DOCUSAURUS_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
         CROWDIN_DOCUSAURUS_API_KEY: ${{ secrets.CROWDIN_API_KEY }}
     - name: setup git config
+      if: github.ref == 'refs/heads/master'
       run: |
         git config --global user.email "chore@noreply.babydegu.com"
         git config --global user.name "chore"
         echo "machine github.com login ${GITHUB_ACTOR} password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
     - name: build and publish website
+      if: github.ref == 'refs/heads/master'
       run: cd website && GIT_USER=${GITHUB_ACTOR} yarn run publish-gh-pages
