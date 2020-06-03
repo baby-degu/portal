@@ -4,7 +4,7 @@
         <title>baby-degu Blog</title>
         <link>https://baby-degu.github.io/docusaurus/blog</link>
         <description>The best place to stay up-to-date with the latest baby-degu news and events.</description>
-        <lastBuildDate>Sat, 16 May 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 31 May 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>https://baby-degu.github.io/docusaurus/blog</link>
         </image>
         <copyright>Copyright © 2020 baby-degu</copyright>
+        <item>
+            <title><![CDATA[Upgrade Slack To Standard Plan]]></title>
+            <link>https://baby-degu.github.io/docusaurus/blog/2020/05/31/upgrade-slack-to-standard-plan.html</link>
+            <guid>https://baby-degu.github.io/docusaurus/blog/2020/05/31/upgrade-slack-to-standard-plan.html</guid>
+            <pubDate>Sun, 31 May 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Today, I've upgraded Slack to paid plan.</p> <p>There are 34 members, including Inactive and Active. Because of the historic reason, the inner motivations of members are different. It brings the difficulty to have a consensus and leading the community one s...</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Limitation Of Centralization]]></title>
             <link>https://baby-degu.github.io/docusaurus/blog/2020/05/16/limitation-of-centralization.html</link>
