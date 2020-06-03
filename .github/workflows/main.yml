@@ -38,4 +38,6 @@ jobs:
         CROWDIN_DOCUSAURUS_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
         CROWDIN_DOCUSAURUS_API_KEY: ${{ secrets.CROWDIN_API_KEY }}
     - name: build and publish website
-      run: cd website && GIT_USER=chore yarn run publish-gh-pages
+      run: cd website && yarn run publish-gh-pages
+      env:
+        GIT_USER: ${{ secrets.GIT_USER }}
