@@ -30,7 +30,7 @@ const pioneers = [
 
 const siteConfig = {
 	title: 'baby-degu', // Title for your website.
-	tagline: "Let's seek out what we can do",
+	tagline: "Let's maximize the Goodness in everyone",
 	url: 'https://baby-degu.github.io', // Your website URL
 	baseUrl: '/docusaurus/', // Base URL for your project */
 
@@ -58,8 +58,8 @@ const siteConfig = {
 	pioneers,
 
 	/* path to images for header/footer */
-	headerIcon: 'img/baby-degu.jpg',
-	footerIcon: 'img/favicon.ico',
+	headerIcon: '',
+	footerIcon: '',
 	favicon: 'img/favicon.ico',
 
 	/* Colors for website */
