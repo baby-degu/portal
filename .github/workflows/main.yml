@@ -3,10 +3,11 @@
 # Cf. Using CI
 # https://help.github.com/en/actions/reference/workflow-commands-for-github-actions
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
+on: push
 name: Deploy master branch
 jobs:
   deploy:
@@ -18,11 +19,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '8.x'
-    - name: setup git config
-      run: |
-        git config --global user.email "chore@noreply.babydegu.com"
-        git config --global user.name "chore"
-        echo "machine github.com login chore password $GITHUB_TOKEN" > ~/.netrc
     - name: install Docusaurus and generate file of English strings
       run: cd website && yarn install && yarn run write-translations && cd ..
     - name: crowdin install
@@ -37,7 +33,12 @@ jobs:
       env:
         CROWDIN_DOCUSAURUS_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
         CROWDIN_DOCUSAURUS_API_KEY: ${{ secrets.CROWDIN_API_KEY }}
+    - name: setup git config
+      if: github.ref == 'refs/heads/master'
+      run: |
+        git config --global user.email "chore@noreply.babydegu.com"
+        git config --global user.name "chore"
+        echo "machine github.com login ${GITHUB_ACTOR} password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
     - name: build and publish website
-      run: cd website && yarn run publish-gh-pages
-      env:
-        GIT_USER: ${{ secrets.GIT_USER }}
+      if: github.ref == 'refs/heads/master'
+      run: cd website && GIT_USER=${GITHUB_ACTOR} yarn run publish-gh-pages
