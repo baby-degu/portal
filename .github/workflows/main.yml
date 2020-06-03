@@ -37,6 +37,6 @@ jobs:
       run: |
         git config --global user.email "chore@noreply.babydegu.com"
         git config --global user.name "chore"
-        echo "machine github.com login "${GITHUB_ACTOR}" password $GITHUB_TOKEN" > ~/.netrc
+        echo "machine github.com login ${GITHUB_ACTOR} password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
     - name: build and publish website
-      run: cd website && GIT_USER="${GITHUB_ACTOR}" yarn run publish-gh-pages
+      run: cd website && GIT_USER=${GITHUB_ACTOR} yarn run publish-gh-pages
