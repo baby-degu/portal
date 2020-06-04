@@ -37,24 +37,18 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Categories</h5>
-            <a href={this.docUrl('qiita.html', this.props.language)}>
+            <a href={this.docUrl('qiita/index.html', this.props.language)}>
               Qiita
             </a>
-            <a href={this.docUrl('udemy.html', this.props.language)}>
+            <a href={this.docUrl('udemy/index.html', this.props.language)}>
               Udemy
             </a>
-            <a href={this.docUrl('dao.html', this.props.language)}>
+            <a href={this.docUrl('dao/index.html', this.props.language)}>
               DAO
             </a>
           </div>
           <div>
             <h5>Community</h5>
-            {/* <a
-              href="https://stackoverflow.com/questions/tagged/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Stack Overflow
-            </a> */}
             {/* <a href="https://discordapp.com/">Project Chat</a> */}
             <a
               href="https://twitter.com/babydegu"
