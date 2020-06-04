@@ -49,9 +49,6 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Community</h5>
-            {/* <a href={this.pageUrl('pioneers.html', this.props.language)}>
-              Pioneers
-            </a> */}
             {/* <a
               href="https://stackoverflow.com/questions/tagged/"
               target="_blank"
