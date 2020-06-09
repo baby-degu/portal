@@ -14,7 +14,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://peaceful-mcclintock-c87ee2.netlify.app/"><img src="https://avatars0.githubusercontent.com/u/36391432?v=4" width="100px;" alt=""/><br /><sub><b>ryuckel</b></sub></a><br /><a href="https://github.com/baby-degu/docusaurus/commits?author=ryuckel" title="Code">💻</a></td>
+    <td align="center"><a href="https://peaceful-mcclintock-c87ee2.netlify.app/"><img src="https://avatars0.githubusercontent.com/u/36391432?v=4" width="100px;" alt=""/><br /><sub><b>ryuckel</b></sub></a><br /><a href="https://github.com/baby-degu/portal/commits?author=ryuckel" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/nottakis"><img src="https://avatars2.githubusercontent.com/u/14342458?v=4" width="100px;" alt=""/><br /><sub><b>taki</b></sub></a><br /><a href="#ideas-nottakis" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
