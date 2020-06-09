@@ -102,10 +102,10 @@ class Footer extends React.Component {
 
         <section className="copyright">
           <a
-            href="https://creativecommons.org/publicdomain/zero/1.0/"
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
             target="_blank"
             rel="noreferrer noopener">
-            Content is licensed under CC-0
+            Content is licensed under CC BY-SA 4.0
           </a>
         </section>
       </footer>
