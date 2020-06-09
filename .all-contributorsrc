@@ -13,10 +13,19 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "nottakis",
+      "name": "taki",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/14342458?v=4",
+      "profile": "https://github.com/nottakis",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "docusaurus",
+  "projectName": "portal",
   "projectOwner": "baby-degu",
   "repoType": "github",
   "repoHost": "https://github.com",
