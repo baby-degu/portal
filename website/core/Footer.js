@@ -100,7 +100,14 @@ class Footer extends React.Component {
           </div>
         </section>
 
-        <section className="copyright">{this.props.config.copyright}</section>
+        <section className="copyright">
+          <a
+            href="https://creativecommons.org/publicdomain/zero/1.0/"
+            target="_blank"
+            rel="noreferrer noopener">
+            Content is licensed under CC-0
+          </a>
+        </section>
       </footer>
     );
   }
