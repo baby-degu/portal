@@ -3,34 +3,29 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Let's seek out what we can do",
+    "tagline": "Let's maximize the Goodness in everyone",
     "docs": {
-      "dao": {
+      "dao/dao": {
         "title": "DAO",
         "sidebar_label": "dao"
       },
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
-      },
-      "doc2": {
-        "title": "document number 2"
-      },
-      "doc3": {
-        "title": "This is document number 3"
-      },
-      "qiita": {
-        "title": "Qiita",
-        "sidebar_label": "qiita"
+      "index": {
+        "title": "Index",
+        "sidebar_label": "index"
       },
       "qiita/2020/05/7-ways-to-speed-up-gitlab-ci-cd-times": {
         "title": "7 ways to speed up your GitLab CI/CD times"
+      },
+      "qiita/qiita": {
+        "title": "Qiita",
+        "sidebar_label": "qiita"
+      },
+      "udemy/index": {
+        "title": "udemy/index"
       }
     },
     "links": {
-      "Docs": "Docs",
-      "DAO": "DAO",
-      "Pioneers": "Pioneers",
+      "Projects": "Projects",
       "Github": "Github",
       "Blog": "Blog"
     },
