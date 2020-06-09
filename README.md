@@ -2,9 +2,9 @@
 
 WebsiteURL: [babydegu.com](babydegu.com)
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![Chat with us on Discord](https://img.shields.io/badge/chat-Discord-blueViolet.svg)](https://discord.gg/QwhGFAW)
+[![Open Collective backers](https://img.shields.io/opencollective/backers/baby-degu)](https://opencollective.com/baby-degu)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
 
 ## Contributors ✨
 
