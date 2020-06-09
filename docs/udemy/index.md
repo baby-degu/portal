@@ -1,7 +1,7 @@
 ---
-id: udemy
-title: Udemy
-sidebar_label: udemy
+id: index
+title: Index
+sidebar_label: index
 ---
 
-This is an initial DAO doc for testing. 
+This is an initial Udemy doc for testing. 

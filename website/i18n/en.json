@@ -5,9 +5,9 @@
     "previous": "Previous",
     "tagline": "Maximize the Goodness in everyone",
     "docs": {
-      "dao/dao": {
-        "title": "DAO",
-        "sidebar_label": "dao"
+      "dao/index": {
+        "title": "Index",
+        "sidebar_label": "index"
       },
       "index": {
         "title": "Index",
@@ -16,12 +16,13 @@
       "qiita/2020/05/7-ways-to-speed-up-gitlab-ci-cd-times": {
         "title": "7 ways to speed up your GitLab CI/CD times"
       },
-      "qiita/qiita": {
-        "title": "Qiita",
-        "sidebar_label": "qiita"
+      "qiita/index": {
+        "title": "Index",
+        "sidebar_label": "index"
       },
       "udemy/index": {
-        "title": "udemy/index"
+        "title": "Index",
+        "sidebar_label": "index"
       }
     },
     "links": {

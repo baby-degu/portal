@@ -1,7 +1,7 @@
 ---
-id: qiita
-title: Qiita
-sidebar_label: qiita
+id: index
+title: Index
+sidebar_label: index
 ---
 
 This is an initial Qiita doc for testing. 
