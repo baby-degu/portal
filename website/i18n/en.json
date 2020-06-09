@@ -7,7 +7,7 @@
     "docs": {
       "dao/index": {
         "title": "Index",
-        "sidebar_label": "index"
+        "sidebar_label": "dao"
       },
       "index": {
         "title": "Index",
@@ -18,11 +18,11 @@
       },
       "qiita/index": {
         "title": "Index",
-        "sidebar_label": "index"
+        "sidebar_label": "qiita"
       },
       "udemy/index": {
         "title": "Index",
-        "sidebar_label": "index"
+        "sidebar_label": "udemy"
       }
     },
     "links": {
@@ -31,9 +31,6 @@
       "Blog": "Blog"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category",
       "Index": "Index",
       "Articles": "Articles"
     }

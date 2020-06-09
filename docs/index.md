@@ -1,7 +1,8 @@
 ---
-id: index
 title: Index
 sidebar_label: index
 ---
 
-This is an index doc for testing. 
+- [Qiita](qiita/index.md)
+- [Udemy](udemy/index.md)
+- [Dao](dao/index.md)
