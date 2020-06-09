@@ -49,7 +49,11 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Community</h5>
-            <a href="https://discord.gg/9e82Y3r">Project Chat</a>
+            <a href="https://discord.gg/9e82Y3r"
+               target="_blank"
+               rel="noreferrer noopener">
+               Project Chat
+            </a>
             <a
               href="https://twitter.com/babydegu"
               target="_blank"
