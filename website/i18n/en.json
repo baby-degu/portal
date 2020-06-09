@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Let's maximize the Goodness in everyone",
+    "tagline": "Maximize the Goodness in everyone",
     "docs": {
       "dao/dao": {
         "title": "DAO",
@@ -38,7 +38,6 @@
     }
   },
   "pages-strings": {
-    "These are features of this project|no description given": "These are features of this project",
     "Help Translate|recruit community translators for your project": "Help Translate",
     "Edit this Doc|recruitment message asking to edit the doc source": "Edit",
     "Translate this Doc|recruitment message asking to translate the docs": "Translate"
