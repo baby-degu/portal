@@ -1,9 +1,8 @@
-# docusaurus
-
-WebsiteURL: [babydegu.com](babydegu.com)
+# portal
 
 [![Chat with us on Discord](https://img.shields.io/badge/chat-Discord-blueViolet.svg)](https://discord.gg/QwhGFAW)
 [![Open Collective backers](https://img.shields.io/badge/accounting-OpenCollective-brown.svg)](https://opencollective.com/baby-degu)
+[![Docs](https://img.shields.io/badge/docs-website-yellow.svg)](https://babydegu.com)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
 
 ## Contributors ✨
