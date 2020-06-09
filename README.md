@@ -3,7 +3,7 @@
 WebsiteURL: [babydegu.com](babydegu.com)
 
 [![Chat with us on Discord](https://img.shields.io/badge/chat-Discord-blueViolet.svg)](https://discord.gg/QwhGFAW)
-[![Open Collective backers](https://img.shields.io/opencollective/backers/baby-degu)](https://opencollective.com/baby-degu)
+[![Open Collective backers](https://img.shields.io/badge/accounting-OpenCollective-brown.svg)](https://opencollective.com/baby-degu)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
 
 ## Contributors ✨
