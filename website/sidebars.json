@@ -1,14 +1,1 @@
-{
-  "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
-  },
-  "Qiita": {
-    "Index": ["qiita"],
-    "Articles": ["qiita/2020/05/7-ways-to-speed-up-gitlab-ci-cd-times"]
-  },
-  "DAO": {
-    "Index": ["dao"]
-  }
-}
+{}

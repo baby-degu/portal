@@ -1,7 +1,6 @@
 ---
-id: index
 title: Index
-sidebar_label: index
+sidebar_label: udemy
 ---
 
 This is an initial Udemy doc for testing. 
