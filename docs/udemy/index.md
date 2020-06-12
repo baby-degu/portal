@@ -1,6 +1,11 @@
 ---
 title: Index
 sidebar_label: udemy
+hide_title: true
 ---
 
-This is an initial Udemy doc for testing. 
+## Reference
+
+- [TBD: How to create courses?]()
+- [TBD: How can we make videos?]()
+- [TBD: How much can we earn?]()
