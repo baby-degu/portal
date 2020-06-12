@@ -1,11 +1,11 @@
 ---
-title: Aragon project updates: May 2020
+title: Aragon project updates May 2020
 hide_title: true
 ---
 
 [Source](https://aragon.substack.com/p/aragon-project-updates-may-2020 "Permalink to Aragon project updates: May 2020")
 
-# Aragon project updates: May 2020
+# Aragon project updates May 2020
 
 Hello ara-friend!
 

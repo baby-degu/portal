@@ -5,6 +5,9 @@
     "previous": "Previous",
     "tagline": "Maximize the Goodness in everyone",
     "docs": {
+      "dao/2020/06/aragon-project-updates-may-2020": {
+        "title": "Aragon project updates May 2020"
+      },
       "dao/index": {
         "title": "Index",
         "sidebar_label": "dao"
@@ -30,10 +33,7 @@
       "Github": "Github",
       "Blog": "Blog"
     },
-    "categories": {
-      "Index": "Index",
-      "Articles": "Articles"
-    }
+    "categories": {}
   },
   "pages-strings": {
     "Help Translate|recruit community translators for your project": "Help Translate",
