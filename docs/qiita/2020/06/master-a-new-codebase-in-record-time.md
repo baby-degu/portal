@@ -1,3 +1,5 @@
+# Master a New Codebase in Record Time
+
 You’re on a new team. The codebase for your project is HUGE. You have no idea where to start. You don’t want to look dumb, and all your teammates are busy with their own work. How do you, regardless of your experience level, get productive in a new-to-you codebase — fast?
 
 We’ve all been there. Diving into new, existing projects with unknown codebases is a regular occurrence. Whether it’s because you’ve started a new job or just switched teams within the same company, the challenge is the same: learn the code, start working, and don’t break stuff.
@@ -58,8 +60,6 @@ The upshot of doing this process on two new projects was that I understood more 
 
 ## What Is the Product’s Architecture and Design?
 
-![](https://miro.medium.com/max/60/0*l9jGturyxZp8Yas6.png?q=20)
-
 ![](https://miro.medium.com/max/2560/0*l9jGturyxZp8Yas6.png)
 
 The terms architecture and design are often used interchangeably. Although they are related, these are actually two different concepts. Architecture is the high-level view of the system, while design is the lower, class-level view.
@@ -98,8 +98,6 @@ You can discover the deployment view of the product by looking at deployment scr
 
 ## Discovering Design
 
-![](https://miro.medium.com/max/60/0*JVQiKl5K7TtHiSYq.png?q=20)
-
 ![](https://miro.medium.com/max/2000/0*JVQiKl5K7TtHiSYq.png)
 
 [Discovering the design of a product](http://www.amazon.com/exec/obidos/ASIN/0128122757/makithecompsi-20) is slightly easier because classes are built and related through the design. There are tools that can help you reveal the design patterns the project uses, and how the classes relate and communicate with each other.
@@ -135,9 +133,6 @@ For languages like Ruby that don’t have the package-to-file location requireme
 Exploring the packages (or namespaces) will hopefully show you that they’re grouped in reasonable ways, which may help you to uncover architecture-level modules. How classes are grouped in packages, and what packages are grouped together, can indicate that they’re meant to be in the same module.
 
 ## Start With a Bug or Small Feature
-
-
-![](https://miro.medium.com/max/60/0*yi7U2F3DTrSw3Y1n.png?q=20)
 
 ![](https://miro.medium.com/max/2560/0*yi7U2F3DTrSw3Y1n.png)
 
