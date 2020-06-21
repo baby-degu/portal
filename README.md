@@ -1,6 +1,6 @@
 # portal
 
-[![Chat with us on Discord](https://img.shields.io/badge/chat-Discord-blueViolet.svg)](https://discord.gg/QwhGFAW)
+[![Chat with us on Discord](https://img.shields.io/badge/chat-Discord-blueViolet.svg)](https://discord.gg/xCRqdUU)
 [![Open Collective backers](https://img.shields.io/badge/accounting-OpenCollective-brown.svg)](https://opencollective.com/baby-degu)
 [![Docs](https://img.shields.io/badge/docs-website-yellow.svg)](https://babydegu.com)
 
