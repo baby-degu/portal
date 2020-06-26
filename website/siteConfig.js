@@ -10,7 +10,7 @@
 
 const siteConfig = {
 	title: 'baby-degu', // Title for your website.
-	tagline: "Maximize the Goodness in everyone",
+	tagline: "Maximizing goodness as a hobby",
 	url: 'https://baby-degu.github.io', // Your website URL
 	baseUrl: '/', // Base URL for your project */
 
