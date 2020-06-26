@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Maximizing goodness as a hobby",
+    "tagline": "Maximizing goodness as a hobby:)",
     "docs": {
       "dao/2020/06/aragon-project-updates-may-2020": {
         "title": "Aragon project updates May 2020"
@@ -15,6 +15,12 @@
       "index": {
         "title": "Index",
         "sidebar_label": "index"
+      },
+      "qiita/2020/06/10-great-programming-projects-to-improve-your-resume-and-learn-to-program": {
+        "title": "qiita/2020/06/10-great-programming-projects-to-improve-your-resume-and-learn-to-program"
+      },
+      "qiita/2020/06/master-a-new-codebase-in-record-time": {
+        "title": "qiita/2020/06/master-a-new-codebase-in-record-time"
       },
       "qiita/index": {
         "title": "Index",
