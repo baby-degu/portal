@@ -9,7 +9,7 @@ So, please allow me to make this honorable quest easier by pointing you in a few
 
 For example, we’ll shortly cover an introduction to Micro Fontends, Atmoic Design, Web components TS take-over, ESM CDN and even Design tokens. Feel free to scroll through and mark the topics you’d like to learn more about. For any questions or more suggestions, just drop a comment below. Enjoy!
 
-* * *
+---
 
 ## 1. Micro frontends
 
@@ -35,18 +35,7 @@ Composed UI app with Bit
 
 Learn more:
 
-[
-
-Micro Frontends
----------------
-
-### Cam Jackson Cam Jackson is a full-stack web developer and consultant at ThoughtWorks, with a particular interest in how…
-
-#### martinfowler.com
-
-
-
-](https://martinfowler.com/articles/micro-frontends.html)
+> [Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
 
 ## 2. Atomic Design
 
@@ -62,27 +51,9 @@ Here’s a [_detailed 30-seconds explanation with visual examples_](/atomic-desi
 
 The advantages of Atomic components go beyond building modular UI applications through modular and reusable components. This paradigm forces you to think in composition so you better understand the role and API of every component, their hierarchy, and how to abstract the building process of your application in an effective and efficient way. Take a look.
 
-[
+> [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
 
-Atomic Design
--------------
-
-### Hey there! I wrote a book called Atomic Design that dives into this topic in more detail, which you can buy as an…
-
-#### bradfrost.com
-
-](https://bradfrost.com/blog/post/atomic-web-design/)
-
-[
-
-Atomic Design: Theory to Practice
----------------------------------
-
-### Bringing Atomic Design into your UI component development workflow.
-
-#### blog.bitsrc.io
-
-](/atomic-design-and-ui-components-theory-to-practice-f200db337c24)
+> [Atomic Design: Theory to Practice](/atomic-design-and-ui-components-theory-to-practice-f200db337c24)
 
 
 ## 3. Encapsulated Styling and Shadow Dom
@@ -97,18 +68,7 @@ _Shadow_ DOM is actually used by browsers for a long time now. You [can think of
 
 It allows hidden DOM trees to be attached to elements in the regular DOM tree — this shadow DOM tree starts with a shadow root, underneath which can be attached to any elements you want, in the same way as the normal DOM. The [main implication](https://dev.to/maxart2501/css-for-an-encapsulated-web-7fo) of this is that we have _no need for a namespace_ for our classes, as there’s no risk of name clashing or style spilling. There also additional advantages. It is often referred to as the long-promised solution to a true encapsulation of styles for web components. Learn more:
 
-[
-
-Using shadow DOM
-----------------
-
-### An important aspect of web components is encapsulation — being able to keep the markup structure, style, and behavior…
-
-#### developer.mozilla.org
-
-
-
-](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
+> [Using shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 
 ## 4. The TypeScript take over
 
@@ -118,44 +78,11 @@ Although it has it’s shortcomings, TS code is easier to understand, faster to 
 
 learn more:
 
-[
+> [Why TypeScript is the best way to write Front-end in 2019](https://medium.com/@jtomaszewski/why-typescript-is-the-best-way-to-write-front-end-in-2019-feb855f9b164)
 
-Why TypeScript is the best way to write Front-end in 2019
----------------------------------------------------------
+> [TypeScript at Lyft](https://eng.lyft.com/typescript-at-lyft-64f0702346ea)
 
-### And why you should convince everybody to use it.
-
-#### medium.com
-
-
-
-](https://medium.com/@jtomaszewski/why-typescript-is-the-best-way-to-write-front-end-in-2019-feb855f9b164)
-
-[
-
-TypeScript at Lyft
-------------------
-
-### How We Chose TypeScript over FlowType
-
-#### eng.lyft.com
-
-
-
-](https://eng.lyft.com/typescript-at-lyft-64f0702346ea)
-
-[
-
-TypeScript at Slack
--------------------
-
-### Or, How I Learned to Stop Worrying & Trust the Compiler
-
-#### slack.engineering
-
-
-
-](https://slack.engineering/typescript-at-slack-a81307fa288d)
+> [TypeScript at Slack](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
 
 ## 5. Web components
@@ -170,12 +97,11 @@ Prominent tools to know in this space are [**Lit-html**](https://github.com/Poly
 
 When thinking of the future of our UI development, and of how principles of modularity, reusability, encapsulation, and standardization should look like in the era of components, web components are the answer. Learn more:
 
-*   [7 Tools for Developing Web Components in 2019](/7-tools-for-developing-web-components-in-2019-1d5b7360654d)
-*   [9 Web Components UI Libraries You Should Know in 2019](/9-web-component-ui-libraries-you-should-know-in-2019-9d4476c3f103)
-*   [Prototyping with Web Components: Build an RSS Reader](/prototyping-with-web-components-build-an-rss-reader-5bb753508d48)
+- [7 Tools for Developing Web Components in 2019](/7-tools-for-developing-web-components-in-2019-1d5b7360654d)
+- [9 Web Components UI Libraries You Should Know in 2019](/9-web-component-ui-libraries-you-should-know-in-2019-9d4476c3f103)
+- [Prototyping with Web Components: Build an RSS Reader](/prototyping-with-web-components-build-an-rss-reader-5bb753508d48)
 
 ## 6. From component libraries to dynamic collections
-===================================================
 
 [![](https://miro.medium.com/max/1838/1*VmerRS_ufSltgSGYiNHinQ.png)](https://bit.dev)
 
@@ -199,44 +125,11 @@ In the short run, this revolutionizes the process of sharing and composing compo
 
 In the long run, Bit helps pave the way to micro-frontends. Why? Because it already lets you independently version, test, build and update parts of your UI application. In 2020 it will introduce independent deployments, which will finally allow different teams to own parts of your apps end-to-end: keep decoupled and simple codebases, let teams cautiously and continuously build and deploy incremental UI upgrades, and compose frontends together.
 
-[
+> [Share reusable code components as a team · Bit](https://bit.dev)
 
-Share reusable code components as a team · Bit
-----------------------------------------------
+> [UI Component design systems · Bit](https://bit.dev/collections)
 
-### Easily share reusable components between projects and applications to build faster as a team. Collaborate to develop…
-
-#### bit.dev
-
-
-
-](https://bit.dev)
-
-[
-
-UI Component design systems · Bit
----------------------------------
-
-### Build your UI component design system. Discover thousands of design systems built with components in React, Vue and…
-
-#### bit.dev
-
-
-
-](https://bit.dev/collections)
-
-[
-
-teambit/bit
------------
-
-### Component platform \* Discover components \* Video demo \* Docs \* Blog \* Gitter \* Discourse \* Twitter Bit makes it easy to…
-
-#### github.com
-
-
-
-](https://github.com/teambit/bit)
+> [teambit/bit](https://github.com/teambit/bit)
 
 ## 7. State management: Bye Bye Redux? (Not….)
 
@@ -256,8 +149,8 @@ _Read_: [_Making Sense of React Hooks_](https://medium.com/@dan_abramov/making-s
 
 ES Modules is the standard for working with modules in the browser, standardized by ECMAScript. Using ES modules you can easily encapsulate functionalities into modules which can be consumed via CDN etc. With the release of Firefox 60, all [major browsers will support](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) ES modules, and the Node mteam is working on adding ES module support to [Node.js](https://nodejs.org/en/). Also, [ES module integration for WebAssembly](https://www.youtube.com/watch?v=qR_b5gajwug) is coming in the next few years. Just imagine modular [Bit](https://github.com/teambit/bit) UI components composed in your app via CDN…
 
-*   [ES modules: A cartoon deep-dive — Mozilla Hacks — the Web developer blog](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
-*   [denoland/deno](https://github.com/denoland/deno)
+- [ES modules: A cartoon deep-dive — Mozilla Hacks — the Web developer blog](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+- [denoland/deno](https://github.com/denoland/deno)
 
 
 ## 9. Progressive web apps. Still growing.
@@ -277,44 +170,11 @@ From the developer’s end you can see how platforms like [Bit.dev](https://bit.
 
 Another promising idea to take note of is [design-tokens](https://css-tricks.com/what-are-design-tokens/). Placing tokens in your code through which designers can really control simple styling aspects (e.g. colors) directly through external collaboration tools. Integrated with platforms like Bit.dev, this can create a tighter workflow than ever before.
 
-[
+> [UI Component Design System: A Developer's Guide](https://dev.to/jonisar/ui-component-design-system-a-developer-s-guide-19fg)
 
-UI Component Design System: A Developer's Guide
------------------------------------------------
+> [UI Design System and Component Library: Where Things Break](https://codeburst.io/ui-design-system-and-component-library-where-things-break-d9c55dc6e386)
 
-### Component design systems let teams collaborate to introduce a consistent user visual and functional experience across…
-
-#### dev.to
-
-
-
-](https://dev.to/jonisar/ui-component-design-system-a-developer-s-guide-19fg)
-
-[
-
-UI Design System and Component Library: Where Things Break
-----------------------------------------------------------
-
-### Is the workflow between designers and developers broken for UI components? And will it be better in 2020?
-
-#### codeburst.io
-
-
-
-](https://codeburst.io/ui-design-system-and-component-library-where-things-break-d9c55dc6e386)
-
-[
-
-7 Tools for Building Your Design System in 2020
------------------------------------------------
-
-### Building a component design system? Seeking better designer-developer collaboration? Check out these awesome tools ⭐️
-
-#### blog.bitsrc.io
-
-
-
-](/7-tools-for-building-your-design-system-in-2020-452d9c9b3b8e)
+> [7 Tools for Building Your Design System in 2020](/7-tools-for-building-your-design-system-in-2020-452d9c9b3b8e)
 
 ## 11. Web assembly — into the future?
 
@@ -329,13 +189,4 @@ In his post, [Eric Elliott](https://medium.com/u/c359511de780?source=post_page--
 
 To learn more about this concept, why it’s useful, where it will be used and why it’s not here yet, I suggest [this great post](https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723) and [this great video](https://www.youtube.com/watch?v=aZqhRICne_M&feature=emb_title).
 
-[
-
-Why We Need WebAssembly: An Interview with Brendan Eich
--------------------------------------------------------
-
-### Brendan Eich & Eric Elliott Discuss WebAssembly Details
-
-#### medium.com
-
-](https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723)
+> [Why We Need WebAssembly: An Interview with Brendan Eich](https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723)
