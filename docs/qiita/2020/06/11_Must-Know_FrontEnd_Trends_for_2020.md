@@ -33,7 +33,7 @@ When **Bit** will introduce deployments in 2020, independent teams will get the 
 
 Composed UI app with Bit
 
-Learn more:
+### Learn more:
 
 > [Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)
 
@@ -51,6 +51,7 @@ Here’s a [_detailed 30-seconds explanation with visual examples_](/atomic-desi
 
 The advantages of Atomic components go beyond building modular UI applications through modular and reusable components. This paradigm forces you to think in composition so you better understand the role and API of every component, their hierarchy, and how to abstract the building process of your application in an effective and efficient way. Take a look.
 
+###
 > [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
 
 > [Atomic Design: Theory to Practice](/atomic-design-and-ui-components-theory-to-practice-f200db337c24)
@@ -76,7 +77,7 @@ So lately every conversation [makes it sound like TS is taking over](https://med
 
 Although it has it’s shortcomings, TS code is easier to understand, faster to implement, it produces less bugs and requires less boilerplate. Want to refactor your React app to work with TS? Go for it. Want to start gradually? Use tools like [Bit](https://github.com/teambit/bit) to gradually refactor components in your app to TS and use the [React-Typescript compiler](https://bit.dev/bit/envs/compilers/react-typescript) to build them independently from your app. This way to can gradually upgrade your code one component at a time.
 
-learn more:
+### learn more:
 
 > [Why TypeScript is the best way to write Front-end in 2019](https://medium.com/@jtomaszewski/why-typescript-is-the-best-way-to-write-front-end-in-2019-feb855f9b164)
 
@@ -125,6 +126,7 @@ In the short run, this revolutionizes the process of sharing and composing compo
 
 In the long run, Bit helps pave the way to micro-frontends. Why? Because it already lets you independently version, test, build and update parts of your UI application. In 2020 it will introduce independent deployments, which will finally allow different teams to own parts of your apps end-to-end: keep decoupled and simple codebases, let teams cautiously and continuously build and deploy incremental UI upgrades, and compose frontends together.
 
+###
 > [Share reusable code components as a team · Bit](https://bit.dev)
 
 > [UI Component design systems · Bit](https://bit.dev/collections)
@@ -190,3 +192,16 @@ In his post, [Eric Elliott](https://medium.com/u/c359511de780?source=post_page--
 To learn more about this concept, why it’s useful, where it will be used and why it’s not here yet, I suggest [this great post](https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723) and [this great video](https://www.youtube.com/watch?v=aZqhRICne_M&feature=emb_title).
 
 > [Why We Need WebAssembly: An Interview with Brendan Eich](https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723)
+
+
+---
+
+## Learn more
+
+> [Maximizing Code Reuse in React](/maximizing-code-reuse-in-react-35ee20ad362c)
+
+> [13 Top React Component Libraries for 2020](/13-top-react-component-libraries-for-2020-488cc810ca49)
+
+> [11 Top Angular Developer Tools for 2020](/11-top-angular-developer-tools-for-2020-3d2621f1e157)
+
+> [11 Top VueJS Developer Tools for 2020](/top-10-vuejs-developer-tools-becd61375447)
