@@ -1,18 +1,5 @@
-11 Must-Know FrontEnd Trends for 2020
-=====================================
-
+# 11 Must-Know FrontEnd Trends for 2020
 Or- how to sound smart in frontEnd lunch conversations!
--------------------------------------------------------
-
-[![Jonathan Saring](https://miro.medium.com/fit/c/96/96/1*pLN3R5sML3dcjAvUZDWtOA.png)](/@JonathanSaring?source=post_page-----cea8a629b08----------------------)
-
-[Jonathan Saring](/@JonathanSaring?source=post_page-----cea8a629b08----------------------)
-
-[Follow](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fblog.bitsrc.io%2F11-must-know-frontend-trends-for-2020-cea8a629b08&source=-c9a6ef212193-------------------------follow_byline-)
-
-[Dec 26, 2019](/11-must-know-frontend-trends-for-2020-cea8a629b08?source=post_page-----cea8a629b08----------------------) · 11 min read
-
-![](https://miro.medium.com/max/60/1*4o8a1yvlifG4zGw9AvSSrQ.png?q=20)
 
 ![](https://miro.medium.com/max/2400/1*4o8a1yvlifG4zGw9AvSSrQ.png)
 
@@ -24,62 +11,25 @@ For example, we’ll shortly cover an introduction to Micro Fontends, Atmoic Des
 
 * * *
 
-1\. Micro frontends
-===================
+## 1. Micro frontends
 
 Micro Frontends are the buzziest frontend topic for lunch conversations.
 
 Ironically, while frontend development enjoys the modular advantages of components, it is still largely more monolithic than backend microservices.
 
-[
-
-![](https://miro.medium.com/max/60/1*SdrrxeKfuAyDEAKATFNUNg.png?q=20)
-
-![](https://miro.medium.com/max/1180/1*SdrrxeKfuAyDEAKATFNUNg.png)
-
-
-
-
-
-
-
-](https://micro-frontends.org/)
+[![](https://miro.medium.com/max/1180/1*SdrrxeKfuAyDEAKATFNUNg.png)](https://micro-frontends.org/)
 
 Micro frontends bring the promise of splitting your frontend architecture into different frontends for different teams working on different parts of your app. Each team can gain autonomy over the end-to-end lifecycle of their micro frontend, which can be developed, versioned, tested, built, rendered, updated and deployed independently (using [tools like **Bit**](https://bit.dev) for example).
 
 Instead of explaining the whole concept here, [**read this great post**](https://martinfowler.com/articles/micro-frontends.html#InANutshell) by @thecamjackson published at the @martinfowler blog. It’s really good and should cover everything you need to start digging into this concept.
 
-[
-
-![](https://miro.medium.com/max/60/1*fxACkCp1y_fDwnF-N7bVMQ.png?q=20)
-
-![](https://miro.medium.com/max/1702/1*fxACkCp1y_fDwnF-N7bVMQ.png)
-
-
-
-
-
-
-
-](https://martinfowler.com/articles/micro-frontends.html)
+[![](https://miro.medium.com/max/1702/1*fxACkCp1y_fDwnF-N7bVMQ.png)](https://martinfowler.com/articles/micro-frontends.html)
 
 However, there are still certain shortages in today’s ecosystem. Mostly, people are worried by issues like the deployments of separate frontends, bundling, environment differences etc. [**Bit**](https://bit.dev) already lets you isolate, version, build, test and update individual frontends/components. For now, this is mainly useful when working with multiple applications (though It’s already commonly used for gradually refactoring parts of existing apps via components).
 
 When **Bit** will introduce deployments in 2020, independent teams will get the power to develop, compose, version, deploy and update standalone frontends. It will let you compose UI apps together and let teams create simple decoupled codebases with independent continuous deployments and incremental upgrades. The composition of these frontends will end up creating your application. Here’s what an app composed using Bit feels like.
 
-[
-
-![](https://miro.medium.com/max/60/1*pHH9k186BYju30BC9OxXTg.png?q=20)
-
-![](https://miro.medium.com/max/2400/1*pHH9k186BYju30BC9OxXTg.png)
-
-
-
-
-
-
-
-](https://bit.dev)
+[![](https://miro.medium.com/max/2400/1*pHH9k186BYju30BC9OxXTg.png)](https://bit.dev)
 
 Composed UI app with Bit
 
@@ -98,22 +48,9 @@ Micro Frontends
 
 ](https://martinfowler.com/articles/micro-frontends.html)
 
-2\. Atomic Design
-=================
+## 2. Atomic Design
 
-[
-
-![](https://miro.medium.com/max/60/1*q5IW7xZF8AYFj8NZEVi17Q.jpeg?q=20)
-
-![](https://miro.medium.com/max/6528/1*q5IW7xZF8AYFj8NZEVi17Q.jpeg)
-
-
-
-
-
-
-
-](https://blog.bitsrc.io/atomic-design-and-ui-components-theory-to-practice-f200db337c24?)
+[![](https://miro.medium.com/max/6528/1*q5IW7xZF8AYFj8NZEVi17Q.jpeg)](https://blog.bitsrc.io/atomic-design-and-ui-components-theory-to-practice-f200db337c24?)
 
 Read: Atomic Design Explained in 30 seconds!
 
@@ -134,8 +71,6 @@ Atomic Design
 
 #### bradfrost.com
 
-
-
 ](https://bradfrost.com/blog/post/atomic-web-design/)
 
 [
@@ -147,26 +82,12 @@ Atomic Design: Theory to Practice
 
 #### blog.bitsrc.io
 
-
-
 ](/atomic-design-and-ui-components-theory-to-practice-f200db337c24)
 
-3\. Encapsulated Styling and Shadow Dom
-=======================================
 
-[
+## 3. Encapsulated Styling and Shadow Dom
 
-![](https://miro.medium.com/max/60/1*TSOpITlAqbyYC_UYYW7zMg.png?q=20)
-
-![](https://miro.medium.com/max/2276/1*TSOpITlAqbyYC_UYYW7zMg.png)
-
-
-
-
-
-
-
-](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
+[![](https://miro.medium.com/max/2276/1*TSOpITlAqbyYC_UYYW7zMg.png)](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 
 Source: developer.mozzila.org
 
@@ -189,8 +110,7 @@ Using shadow DOM
 
 ](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 
-4\. The TypeScript take over
-============================
+## 4. The TypeScript take over
 
 So lately every conversation [makes it sound like TS is taking over](https://medium.com/@jtomaszewski/why-typescript-is-the-best-way-to-write-front-end-in-2019-feb855f9b164) frontend development. It is reported that [**80% of developers admit they would like to use or learn TypeScript in their next project**](https://2018.stateofjs.com/javascript-flavors/typescript/).
 
@@ -237,10 +157,8 @@ TypeScript at Slack
 
 ](https://slack.engineering/typescript-at-slack-a81307fa288d)
 
-5\. Web components
-==================
 
-![](https://miro.medium.com/max/60/1*-zkpV1IfOv-1dux6ZqWBCQ.png?q=20)
+## 5. Web components
 
 ![](https://miro.medium.com/max/3200/1*-zkpV1IfOv-1dux6ZqWBCQ.png)
 
@@ -256,22 +174,10 @@ When thinking of the future of our UI development, and of how principles of modu
 *   [9 Web Components UI Libraries You Should Know in 2019](/9-web-component-ui-libraries-you-should-know-in-2019-9d4476c3f103)
 *   [Prototyping with Web Components: Build an RSS Reader](/prototyping-with-web-components-build-an-rss-reader-5bb753508d48)
 
-6\. From component libraries to dynamic collections
+## 6. From component libraries to dynamic collections
 ===================================================
 
-[
-
-![](https://miro.medium.com/max/60/1*VmerRS_ufSltgSGYiNHinQ.png?q=20)
-
-![](https://miro.medium.com/max/1838/1*VmerRS_ufSltgSGYiNHinQ.png)
-
-
-
-
-
-
-
-](https://bit.dev)
+[![](https://miro.medium.com/max/1838/1*VmerRS_ufSltgSGYiNHinQ.png)](https://bit.dev)
 
 Organize components in dynamic collections; reuse, compose, stay independent
 
@@ -281,37 +187,13 @@ Instead of working hard to build a cumbersome and highly-coupled component-libra
 
 Using [Bit (GitHub)](https://github.com/teambit/bit) you can independently isolate, version, build, test and update UI components. It streamlines the process of isolating a component in an existing app, harvesting it to a remote collection, and using it anywhere. Every component can build, test, and render outside of any project. You can update a single component (and it’s dependants) and not the whole app.
 
-[
-
-![](https://miro.medium.com/freeze/max/60/1*c6475ieLqqEzb4htt3T94Q.gif?q=20)
-
-![](https://miro.medium.com/max/1600/1*c6475ieLqqEzb4htt3T94Q.gif)
-
-
-
-
-
-
-
-](https://bit.dev)
+[![](https://miro.medium.com/max/1600/1*c6475ieLqqEzb4htt3T94Q.gif)](https://bit.dev)
 
 In the bit.dev platform (or on your own server) your components can be remotely hosted and organized for different teams, so that every team can control the development of their own components. Every team can share and reuse components but keep their independence and control.
 
 The platform also provides the all-in-one ecosystem for a shared components out-of-the-box: It auto-documents UI components, renders components in an interactive playground, and even provides a built-in registry to install components using npm/yarn. In addition, you can `bit import` components for modifications in any repository.
 
-[
-
-![](https://miro.medium.com/freeze/max/60/1*RZP_jNEEilVtmjGH4O4UHQ.gif?q=20)
-
-![](https://miro.medium.com/max/1600/1*RZP_jNEEilVtmjGH4O4UHQ.gif)
-
-
-
-
-
-
-
-](https://bit.dev)
+[![](https://miro.medium.com/max/1600/1*RZP_jNEEilVtmjGH4O4UHQ.gif)](https://bit.dev)
 
 In the short run, this revolutionizes the process of sharing and composing components in a similar way to how Spotify/iTunes changed the process of previously sharing Music through static CD Music Albums. It’s a dynamic and modular solution that lets everyone share and use components together.
 
@@ -356,10 +238,7 @@ teambit/bit
 
 ](https://github.com/teambit/bit)
 
-7\. State management: Bye Bye Redux? (Not….)
-============================================
-
-![](https://miro.medium.com/max/60/1*6oeKSYnPG2pbg8vdaiteYg.png?q=20)
+## 7. State management: Bye Bye Redux? (Not….)
 
 ![](https://miro.medium.com/max/2290/1*6oeKSYnPG2pbg8vdaiteYg.png)
 
@@ -371,10 +250,7 @@ However, the uprising of new features within frameworks that handle states (Reac
 
 _Read_: [_Making Sense of React Hooks_](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889) — by [Dan Abramov](https://medium.com/u/a3a8af6addc1?source=post_page-----cea8a629b08----------------------)
 
-8\. ESM CDN
-===========
-
-![](https://miro.medium.com/max/60/1*dSWVWelaiGClQXD6nGhBuA.jpeg?q=20)
+## 8. ESM CDN
 
 ![](https://miro.medium.com/max/4000/1*dSWVWelaiGClQXD6nGhBuA.jpeg)
 
@@ -383,29 +259,17 @@ ES Modules is the standard for working with modules in the browser, standardized
 *   [ES modules: A cartoon deep-dive — Mozilla Hacks — the Web developer blog](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 *   [denoland/deno](https://github.com/denoland/deno)
 
-9\. Progressive web apps. Still growing.
-========================================
+
+## 9. Progressive web apps. Still growing.
 
 [Progressive web applications](https://developers.google.com/web/progressive-web-apps) take advantage of the latest technologies to [combine the best of web and mobile apps](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/). Think of it as a website built using web technologies but that acts and feels like an app. Recent advancements in the browser and in the availability of service workers and in the Cache and Push APIs have enabled web developers to allow users to install web apps to their home screen, receive push notifications and even work offline.
 
 Since PWAs provide an intimate user experience and because all network requests can be intercepted through service workers, it is imperative that the app be hosted over HTTPS to prevent man-in-the-middle attacks, which also spells better security. Here’s a great talk by Facebook developer [Omer Goldberg](https://medium.com/u/49b16006351c?source=post_page-----cea8a629b08----------------------) outlining best practices for PWAs.
 
-10\. Designer-developer integrations
-====================================
 
-[
+## 10. Designer-developer integrations
 
-![](https://miro.medium.com/freeze/max/60/1*55RGwH_5D3mIZoVhSCXWOA.gif?q=20)
-
-![](https://miro.medium.com/max/1600/1*55RGwH_5D3mIZoVhSCXWOA.gif)
-
-
-
-
-
-
-
-](https://bit.dev)
+[![](https://miro.medium.com/max/1600/1*55RGwH_5D3mIZoVhSCXWOA.gif)](https://bit.dev)
 
 With the uprise of [component-driven design systems](https://dev.to/jonisar/ui-component-design-system-a-developer-s-guide-19fg) to enable a [consistent UI across products and teams](/building-a-consistent-ui-design-system-4481fb37470f), [new tools have emerged](/7-tools-for-building-your-design-system-in-2020-452d9c9b3b8e) to bridge the gap between designers and developers. [This is no simple task however](https://codeburst.io/ui-design-system-and-component-library-where-things-break-d9c55dc6e386); While code itself is really the only source of truth (this is what your user really gets), most tools try to bridge the gap from the designer’s end. In this category you can find Framer, Figma, Invision DSM and more.
 
@@ -452,17 +316,16 @@ UI Design System and Component Library: Where Things Break
 
 ](/7-tools-for-building-your-design-system-in-2020-452d9c9b3b8e)
 
-11\. Web assembly — into the future?
-====================================
+## 11. Web assembly — into the future?
 
 [Web assembly](https://webassembly.org/) brings language diversity into web development to cover gaps created by JavaScript. It is defined as a “a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications”.
 
 In his post, [Eric Elliott](https://medium.com/u/c359511de780?source=post_page-----cea8a629b08----------------------) [elegantly outlines the concept’s benefits](https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6):
 
-*   **An improvement to JavaScript:** Implement your performance critical stuff in wasm and import it like a standard JavaScript module.
-*   **A new language:** WebAssembly code defines an AST (Abstract Syntax Tree) represented in a **binary format**. You can **author and debug in a text format** so it’s readable.
-*   **A browser improvement:** **Browsers will understand the binary format**, which means we’ll be able to compile binary bundles that compress smaller than the text JavaScript we use today. Smaller payloads mean faster delivery. Depending on **compile-time optimization opportunities**, WebAssembly bundles may run faster than JavaScript, too!
-*   **A Compile Target:** A way for other languages to get first-class binary support across the entire web platform stack
+- **An improvement to JavaScript:** Implement your performance critical stuff in wasm and import it like a standard JavaScript module.
+- **A new language:** WebAssembly code defines an AST (Abstract Syntax Tree) represented in a **binary format**. You can **author and debug in a text format** so it’s readable.
+- **A browser improvement:** **Browsers will understand the binary format**, which means we’ll be able to compile binary bundles that compress smaller than the text JavaScript we use today. Smaller payloads mean faster delivery. Depending on **compile-time optimization opportunities**, WebAssembly bundles may run faster than JavaScript, too!
+- **A Compile Target:** A way for other languages to get first-class binary support across the entire web platform stack
 
 To learn more about this concept, why it’s useful, where it will be used and why it’s not here yet, I suggest [this great post](https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723) and [this great video](https://www.youtube.com/watch?v=aZqhRICne_M&feature=emb_title).
 
