@@ -1,4 +1,5 @@
 # 11 Must-Know FrontEnd Trends for 2020
+
 Or- how to sound smart in frontEnd lunch conversations!
 
 ![](https://miro.medium.com/max/2400/1*4o8a1yvlifG4zGw9AvSSrQ.png)
