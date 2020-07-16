@@ -12,11 +12,11 @@
         });
       </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">qiita/2020/06/master-a-new-codebase-in-record-time</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="爆速で新しいコードベースをマスターする"></a><a href="#爆速で新しいコードベースをマスターする" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>爆速で新しいコードベースをマスターする</h1>
 <p>君は新しいチームに入った。 プロジェクトのコードベースは巨大だ。 どこから手を付ければいいのかわからない。 君は馬鹿だと思われたくないし、チームメイトは皆、自分の仕事で忙しい。 さて、どうやったら、経験レベルに関係なく、全く初めてのコードベースで生産性を高めることができるものか？それも素早くだ。</p>
-<p>これは開発者であれば誰もが通る道だ。 未知のコードベースを持つ既存のプロジェクトに飛び込むことは定期的に起こる。 転職したばかりなのか、同じ会社内でチームを切り替えただけなのかは関係なく、やらなければならないことは同じ。ソースコードを読み、作業を始め、そして何も壊さないということ。</p>
+<p>これは開発者であれば誰もが通る道だ。 未知のコードベースを持つ既存のプロジェクトに飛び込むことは定期的に起こる。 転職したばかりなのか、同じ会社内でチームを切り替えただけなのかは関係なく、やらなければならないことは同じだ。ソースコードを読み、作業を始め、そして何も壊さないということである。</p>
 <p>君はどうする？</p>
-<p>新しいプロジェクトに参加するときにソースコードを学ぶということ以上に分かりきったことはないだろう。 どんなクラスが存在して、そのクラスが何をしていて、異なる機能や働きのコアロジックがどこにあるのか把握する必要があるのだ。</p>
-<p>残念ながら、コード以外にも学ぶ必要があることはあります。 開発の経験を積むにつれて、自分の仕事はソフトウェア開発だけではなく他にもたくさんあることを知るようになる。そしてソフトウェアはコードだけでなくもっと多くの要素があるということも知るようになる。</p>
-<p>コードはソフトウェアがどのように書かれて実行されるかということはもちろん、暗黙的な仮定とプロダクトが提供されるドメインに関する知識をも含有している。 君の仕事はそれをすべて学び理解することだ。</p>
+<p>新しいプロジェクトに参加するときに必要なことは、ソースコードを学ぶことであるということ以上に分かりきったことはないだろう。 どんなクラスが存在して、そのクラスが何をしていて、異なる機能や働きのコアロジックがどこにあるのか把握する必要があるのだ。</p>
+<p>残念ながら、<em>コード以外</em>にも<a href="https://simpleprogrammer.com/2017/06/21/9-common-problems-new-programmers-face/">学ばならなければならないことがあるのだ</a>。 開発の経験を積むにつれて、自分の仕事はソフトウェア開発だけではなく他にもたくさんあることを知るようになる。そしてソフトウェアにはコードだけでなくもっと多くの要素があるということも。</p>
+<p>コードはソフトウェアがどのように書かれて実行されるかということはもちろん、暗黙的な前提条件とプロダクトが提供されるドメインに関する知識をも含有している。 君の仕事はそれをすべて学び理解することだ。</p>
 <p>君はプロダクトのメンタルモデルを組み立てる必要がある。 そのためには、それについて多くのことを理解する必要があるが、その一部は最初のうちははっきりとは見えない。</p>
 <p>メンタルモデルに必要なすべての情報を知るには、取り組もうとしているコードベースの経験が豊富な1人以上の開発者から学ぶのが一番いい方法だ。 ただし、そのような人は一人もチームに存在しないか全員忙しすぎるか分からないが、常に可能であるとは限らないのだ。</p>
 <p>そこで、自力でコードベースを学ぶいくつかの方法をここで教えよう。</p>
@@ -26,84 +26,80 @@
 <p>一部のサービスは厳密に言うとAPIサービスであり、エンドユーザーはまったく使わない。 モバイルアプリのような他のサービスは、エンドユーザーによってダイレクトに使用される。 どちらの場合も、その製品はサードパーティのサービスを利用して、自身の機能の一部を提供するケースが多い。</p>
 <p>プロジェクトのコンテキストを自力で判別するには、そのプロダクトが使用するライブラリ群、言いかえると依存パッケージを調べる必要があるだろう。 依存パッケージを見つける方法は、言語とビルドツールによって異なる。 各言語とビルドツールには依存パッケージを処理する独自の方法があるため、プロジェクトでプロダクトのビルドに使用しているツールチェーンを理解することが重要なのだ。</p>
 <p>ツールチェインを理解するには、そのプロダクトをどうやってビルド・実行しているか理解する必要がある。 運が良ければ、ビルドプロセスを説明するドキュメントがいくらかあるだろう。</p>
-<p>Ruby on Rails（RoR）などの一部のプロジェクトは規約ベースだ。つまり、すべてのRoRプロジェクトは同じ設計、同じディレクトリ構成、同じ基本的ツールチェーンに準拠している。 その結果、規約ベースのプロジェクトを実行させるのは、少し簡単になる。これまで君が一度も同じようなプロジェクトの経験が無くてもだ。</p>
+<p>Ruby on Railsなどの一部のプロジェクトは規約ベースだ。つまり、すべてのRuby on Railsプロジェクトは同じ設計、同じディレクトリ構成、同じ基本的ツールチェーンに準拠している。 その結果、規約ベースのプロジェクトを実行させるのは、少し簡単になる。これまで君が一度も同じようなプロジェクトの経験が無くてもだ。</p>
 <p>多くのJavaプロジェクトのように、プロジェクトがより設定ベースのプロジェクトである場合、タスクは少し複雑になる。 多くのJavaプロジェクトはApacheのMavenを使用しているが、古い場合はAntを使っているか、ややもすると新しい場合はGradleを使っているかもしれない。 見つけだすにはに探るしかない。</p>
 <p>私が知る限りではビルドツールというのは、特定のファイルを使用してタスクを保存し、その他の特定のファイルを使用してプロジェクトの依存パッケージを保存している。 だから、私はまずそれのファイルに目をつける。</p>
-<p>npmを使用するプロジェクトのpackage.jsonやAntベースのプロジェクトのbuild.xmlなど、ビルドファイルであることがわかっているすべてのファイルの最上位ディレクトリを調べるのが私のやり方だ。 それらのファイルが見つからない時は、知らないファイルや隠しファイルを探す。 次に、それらのファイルについてググって、何が出てくるかを確認する。 十中八九、これによってビルドツールを見つけ出すことができる。</p>
+<p>npmを使用するプロジェクトのpackage.jsonやAntベースのプロジェクトのbuild.xmlなど、ビルドファイルであることがわかっているすべてのファイルの最上位ディレクトリを調べるのが私のやり方だ。 それらのファイルが見つからない時は、見たことのないファイルや不明な形式のファイルを探す。 次に、それらのファイルについてググって、何が出てくるかを確認する。 十中八九、これによってビルドツールを見つけ出すことができる。</p>
 <p>使用されているビルドツールがわかったら、そのツールのコマンドラインオプションを使用して、利用可能なすべてのタスクを確認できる。 情報をGoogleで調べるか、manページを使用するかがたいていの場合、使用可能なタスクを返すオプションを見つける最も簡単な方法だ。 たとえば、Rakeは-Tオプションを使用して利用可能なすべてのタスクを表示してくれる。</p>
 <p>理想的には、タスクには、コードのビルドと実行に最適なタスクを示すための適切な名前が付けられる。 そうでない場合は、各タスクを実行して何が起こるかを確認すればよいのだ。</p>
-<p>さて、君は今コードをビルドして実行できたと仮定しよう。コードをいじってみよう（直接コードをいじることができるプロダクトであれば）。 それが何をしてどのように機能するのかをただ理解したいだけの子供のようにそれを使ってみるのだ。 または、ユーザーのことを頭に入れて、ユーザーが作業するために製品をどのように使っていく必要があるかを確認しよう。 これらのアクションによって、製品の機能と使用方法の概要がわかる。</p>
-<p>また、テストスイートがある場合は、私はこの時点でも実行するようにしている。 まず、テストすべて通過するとき、思わずほおが緩むような心地良さが得られる。 第二に、テストが失敗した場合、コードとテストにを調べてより多くを学ぶ機会が得られる。 第3に、スイートを実行すると、単体テスト、機能テスト、統合テスト、受け入れテストなど、どの程度、そのコードがテストされていてどのようにテストされているかの全体的な理解が得られる。</p>
+<p>さて、君は今コードをビルドして実行できたと仮定しよう。（直接インタラクションできるプロダクトであれば）プロダクトを触ってみよう。 それが何をしてどのように機能するのかをただ理解したいだけの子供のようにそれを使ってみるのだ。 また、ユーザーのことを頭に入れて、ユーザーが様々な作業を行うのにそのプロダクトをどのように最初から使っていく必要があるかを確認しよう。 これらのアクションによって、プロダクトの機能と使用方法の概要がわかる。</p>
+<p>また、テストコードがある場合は、私はこの時点でも実行するようにしている。 まず、テストすべて通過するとき、思わず頬が緩むような心地良さが得られる。 第二に、テストが失敗した場合、コードとテストにを調べてより多くを学ぶ機会が得られる。 第3に、テストコードを実行すると、単体テスト、機能テスト、統合テスト、受け入れテストなど、どの程度、そのコードがテストされていてどのようにテストされているかの全体的な理解が得られる。</p>
 <p>実行中のプロダクトをいじることができたら、残りのコンテキストを把握していけばよい。</p>
 <p>ここでの私が最初にやることは、コードの依存関係を調べることだ。 すなわち、プロジェクトのビルドと実行に使用されるライブラリのことだ。</p>
-<p>私は依存関係ファイルを調べて、それぞれが何をしているのか理解を明確にするように心がけている。 依存関係リストを確認するこの作業は、ソースコード中で使用されているサードパーティのソフトウェアを識別するのに役立つが、開発中のプロダクトのいくつかの特長や機能を見つけるのにも役立つ可能性があるのだ。</p>
+<p>私は依存関係ファイルを調べて、それぞれが何をしているのか明確に理解するように心がけている。 依存関係リストを確認するこの作業は、ソースコード中で使用されているサードパーティのソフトウェアを識別するのに役立つが、開発中のプロダクトのいくつかの特長や機能を見つけるのにも役立つ可能性があるのだ。</p>
 <p>最近の仕事で、私は2つのRailsアプリの開発を引き継いだ。 どちらも約80％完了していたが、以前の開発者が退職したため、大半のコードを自力で理解しなければならなかった。 RailsアプリはGemfileを使用して依存関係を管理する。私はアプリが何を使用しているかを理解するためにはGemfileを調べる必要があるということを知っていたのだ。</p>
 <p>Gemfileを調べて、見慣れないGemをそれぞれ調べたところ、いくつか興味深いことがわかった。 各アプリは認証を処理するために特定のgem（Devise）を使用し、どちらもMySQLではなくPostgreSQLを使って、1つのアプリはStripeを使用していて、そのアプリはOAuth機能も提供していた。 さらに、各アプリにはAWSのGemが存在しており、これは機能の一部にAWSを利用していることを示唆していた。 結局のところ、どちらもAWSのOpsWorksプラットフォームにデプロイ・ホスティングされているということがわかった。</p>
-<p>2つの新しいプロジェクトでこのプロセスを実行した結果、<a href="http://www.amazon.com/exec/obidos/ASIN/0134494164/makithecompsi-20">各アプリの機能について詳しく理解できた</a>提供されているほか、通信相手となるいくつかの外部システムも含まれています。</p>
+<p>2つの新しいプロジェクトでこのプロセスを実行した結果、[各アプリの機能](<a href="http://www">http://www</a>. amazon. com/exec/obidos/Asin/0134494164/makithecompsi-20)について詳しく理解できた上に、プロジェクトと連携しているいくつかの外部システムについてより理解することができた。</p>
 <h2><a class="anchor" aria-hidden="true" id="プロダクトのアーキテクチャと設計はどうなっているか？"></a><a href="#プロダクトのアーキテクチャと設計はどうなっているか？" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>プロダクトのアーキテクチャと設計はどうなっているか？</h2>
 <p><img src="https://miro.medium.com/max/2560/0*l9jGturyxZp8Yas6.png" alt=""></p>
 <p>アーキテクチャと設計という用語は、しばしば同じ意味で使われる。 それらは関連しているものの、これらは実際には2つの異なる概念だ。 アーキテクチャはシステムの上位レベルの観点であって、設計は下位のクラスレベルの観点である。</p>
-<p>プロジェクトのアーキテクチャは、プロジェクトの複数の「観点」で構成され、セキュリティ、パフォーマンス、変更可能性、テスト容易性、保守性、モジュール性、回復力、可用性、さらには市場投入までの時間といった非機能要件や品質属性を保存する。</p>
-<p>対照的に、設計とはデザインパターンが現れ始めるところだ。 このレベルにおいて、さまざまなクラスがどのように相互に関係して連携しているかを君は理解する。</p>
+<p>プロジェクトのアーキテクチャは、プロジェクトの複数の「観点」で構成され、セキュリティ、パフォーマンス、変更可能性、テスト容易性、保守性、モジュール性、回復力、可用性、さらには市場投入までの時間といった非機能要件や品質属性を含有している。</p>
+<p>対照的に、設計とはデザインパターンが現れ始めるところだ。 このレベルにおいて、さまざまなクラスがどのように相互に関係して連携しているかを理解する。</p>
 <p>新しいコードベースを習得するためにどのようにこれら2つの概念を利用できるか詳しく見ていこう。</p>
 <h2><a class="anchor" aria-hidden="true" id="アーキテクチャを解き明かす"></a><a href="#アーキテクチャを解き明かす" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>アーキテクチャを解き明かす</h2>
 <p>アーキテクチャは、大きなスケールでそのプロダクトの一般的なレイアウトを理解するのに役立つ。 コンパイル時（モジュール）観点、ランタイム（コンポーネントとコネクタ）観点、およびデプロイメント（割り当て）観点を確認することで、アーキテクチャを組み立てることができる。 これらの各観点は、システムのさまざまな品質を捉えており、組み合わせることでプロダクトのより完全な全体像を形成する。</p>
 <p>コンパイル時の観点は、ほとんどの開発者がアーキテクチャとして考えるものだ。 それは統一モデリング言語（UML）クラス図に似ている。コードの書き込みまたは読み取り中にコードがどのように編成されるかを示す。 それは役割をモジュールにグループ化する。各モジュールは複数のクラスから構成されている。</p>
 <p>ランタイムの観点は、システムの実行中にその一部をどのように理解できるかを教えてくれる。 ランタイムの相互作用をコンポーネントにグループ化し、それらのコンポーネントがコネクタとどのように相互作用すしているかを詳しく教えてくれる。 これらのコンポーネントはそのプロダクトがどのようにしてプロセスとスレッドを使用するかを教えてくれるが、それに限らない。</p>
-<p>デプロイメントの観点は、そのプダクトがサーバー（またはクライアントデバイス）に物理的にどのように配置されているか、およびそれらのサーバーがどのように関係しているかを教えてくれる。 これは、ソフトウェアが実行される物理環境を詳しく示している。</p>
-<p>コードを見ただけでは、アーキテクチャを自分で明らかにするのは難しい場合があるだろう。 Railsのように、「設定より規約」を採用するプロダクトで作業できるほど幸運である場合、すでに君のやるべき作業の多くは完了している。それはそういったプロダクトは同じ基本アーキテクチャに準拠しているからだ。</p>
+<p>デプロイメントの観点は、そのプロダクトがサーバー（またはクライアントデバイス）に物理的にどのように配置されているか、およびそれらのサーバーがどのように関係しているかを教えてくれる。 これは、ソフトウェアが実行される物理環境を詳しく示している。</p>
+<p>コードを見ただけでは、アーキテクチャを自分で明らかにするのは難しい場合があるだろう。 Railsのように、プロダクトが「設定より規約」を採用していればラッキーだ。すでに君のやるべき作業の多くは完了している。それはそういったプロダクトは同じ基本アーキテクチャに準拠しているからだ。</p>
 <p>設定ベースのプロジェクトで作業している場合、アーキテクチャの解明はもっと大変だろう。というのもこれらのプロジェクトはアーキテクチャに関して制約を持たず、したがって一つ一つが異なるものになるからだ。 それらは元々それを開発した開発者の影響を完全に受けていて、アーキテクチャ決定の背後にある理由はほとんど文書化されていない。</p>
 <p>規約と構成いずれの場合でも、大規模なプロジェクトは長期間にわたって進行し、さまざまな開発者が関与する。これらの開発者には、アーキテクチャの決定とプロジェクトの変更を適切なドキュメントに落とし込める者と落とし込めない者（こちらの方が可能性が高い）がいる。</p>
 <p>残念ながら、既存のシステムでは、アーキテクチャの観点を解き明かすことは簡単ではない。 コードのコンパイル時の観点を解き明かすのが難しいのは、それが非常に高レベルなので、低レベルの関係がプロセスを複雑にするためだ。 この観点は、システムのクラスを抽象化し、パーツまたはモジュール全体がどのように連携するかを教えてくれる。 これらのモジュールを見つけることは難しい。というのもクラスがモジュール内にいくらか編成されている場合でも、それらの境界をモジュールレベルで維持することはめったにないからだ。</p>
 <p>プロジェクトが進み、開発者が加入・脱退するにつれて、すべての人がアーキテクチャがどういうものであるか知っているとは限らないため、気付かないうちにアーキテクチャから外れたことをしてしまうかもしれない。 そのため、プロジェクトが進むにつれて、元のアーキテクチャは消えてしまう可能性がある。</p>
 <p>パッケージと名前空間内のクラス編成を使用して、プロジェクトがどのようにアーキテクトされているか初めて理解することができるだろう。 この手法を、後で説明するUMLクラス図と組み合わせて使用すると、プロジェクトに何のモジュールが存在するかをよりよく理解できる。</p>
-<p>ランタイムの観点はを解き明かすのはもう少し簡単だが、大抵はそれほど有用ではないものだ。 \ <code>ps \</code>のようなオペレーティングシステムツールと、スレッドを表示できるデバッガーを組み合わせることで、それを明らかにすることができます。 特定のスレッドで実行されているクラスまたはクラスのグループを確認すると、実行時にプロジェクトのどの部分が互いに通信しているかを確認するのに役立つ。 私が取り組んできたほとんどのプロジェクトでは、ランタイムの観点は、意図的なマルチスレッド化が行われている場合にのみ役立った。</p>
+<p>ランタイムの観点はを解き明かすのはもう少し簡単だが、大抵はそれほど有用ではないものだ。  <code>ps</code>のようなオペレーティングシステムツールと、スレッドを表示できるデバッガを組み合わせることで、それを明らかにすることは可能だ。 特定のスレッドで実行されているクラスまたはクラスのグループを確認すると、実行時にプロジェクトのどの部分が互いに通信しているかを確認するのに役立つ。 私が取り組んできたほとんどのプロジェクトでは、ランタイムの観点は、意図的なマルチスレッド化が行われている場合にのみ役立った。</p>
 <p>RailsのCapistranoスクリプトなどのデプロイメントスクリプトを確認することで、そのプロダクトのデプロイメントの観点を解き明かすことができる。 AWSのOpsWorksなど、サービスがデプロイ先のシステムがわかっている場合は、そのシステムのサービスダッシュボードから、どのサーバーで何のアプリケーションが実行されているかを知ることもできるだろう。</p>
 <h2><a class="anchor" aria-hidden="true" id="設計を解き明かす"></a><a href="#設計を解き明かす" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>設計を解き明かす</h2>
 <p><img src="https://miro.medium.com/max/2000/0*JVQiKl5K7TtHiSYq.png" alt=""></p>
-<p>プロダクトの設計を解き明かすのはもう少し簡単だ。というのはクラスは設計を通じて構築され関連付けられるからだ。 プロジェクトが使用するデザインパターン、およびクラスが互いにどのように関連し、通信するかを明らかにするのに役立つツールが存在する。</p>
+<p><a href="http://www.amazon.com/exec/obidos/ASIN/0128122757/makithecompsi-20">プロダクトの設計を解き明かす</a>のはもう少し簡単だ。というのはクラスは設計を通じて構築され関連付けられるからだ。 プロジェクトが使用するデザインパターン、およびクラスが互いにどのように関連し、通信するかを明らかにするのに役立つツールが存在する。</p>
 <p>プロジェクトのすべてまたは一部のUMLクラス図を生成するツールを使うのが一番簡単な方法だ。 クラス図に慣れていない場合は、クラスを表示してくれて（あたりまえかな？）、例えば、継承、構成といった関係を教えてくれる。 Eclipse、IntelliJ、Visual StudioなどのIDEは、UMLクラス図を生成したり、UMLクラス図を生成するプラグインをサポートしている。 スタンドアローンツールもある。 一覧を<a href="https://modeling-languages.com/uml-tools">ここ</a>でみることができる 。</p>
 <p>明らかにしたコンパイル時のアーキテクチャモジュールと一緒に、生成されたクラス図を使うことによって、みつけたことを検証することができる場合がある。 疑わしいモジュール境界の周りにクラス図を生成して、メンタルモデルが当てはまるかどうかを確認できる。</p>
 <p>UMLシーケンス図は、2番目に有用な図だ。 これは、クラス同士がどのようにどういう順序でどのように連携しているか教えてくれる。これは、システムを介したデータのフローを決定するのに有用だ。</p>
 <p>前にも言ったと思うが、多くのIDEは直接またはプラグインを介してシーケンス図の構築をサポートしている。 しかし、私が使用したものはすべて、ダイアグラムを生成するためにはコードを実行してプロファイルを作成する必要があった。これにより、明示的かつ簡単に自分で実行できるコードパスの有用性が制限されてしまう。</p>
 <p>JavaやC＃などの静的型付き言語を使用している場合、EclipseやVisual StudioなどのIDEは、何が特定のメソッドを呼び出しているかを教えてくれる。 この機能を繰り返し使うことで、どのクラスがどのように通信するかを理解しやすくなる。 それから、興味のあるコードの部分に対して独自のシーケンス図を作成できる。</p>
-<p>過去の仕事では、Javaに似た静的型付け言語であるAdobe Flex（AS3）を使用してチームにいました。 私は新しく、プロジェクトが大規模だったので、どのクラス同士が関連していて、それらがどのように配置されているかを視覚的に理解したかった。 <a href="https://www.visual-paradigm.com/">ビジュアルパラダイム</a>製品は、Flexに対応している数少ない製品の1つだった。 その製品を使用して、ソースコードをいくつかのかたまりに分けてシーケンス図を生成した。プロジェクト全体で実行するには大きすぎたためだ。</p>
+<p>過去の仕事では、Javaに似た静的型付け言語であるAdobe Flex（AS3）を使用してチームにいました。 私は、プロジェクトが新しく大規模だったので、どのクラス同士が関連していて、それらがどのように配置されているかを視覚的に理解したかった。 <a href="https://www.visual-paradigm.com/">ビジュアルパラダイム</a>製品は、Flexに対応している数少ない製品の1つだった。 その製品を使用して、ソースコードをいくつかのかたまりに分けてシーケンス図を生成した。プロジェクト全体で実行するには大きすぎたためだ。</p>
 <p>結果の図は、そのクラスが持つ関係の数によって、どのクラスが重要である可能性が高いかをすばやく確認するのに役立った。 残念なことに、プロジェクト全体をより含めようとするにつれて、ダイアグラムはあまり役に立たなくなっていった。 膨大な数の関係が、パターンの解明を困難にしだしたのだ。</p>
-<p>とはいえ、コードのかたまりに対してシーケンス図を作成することは<em>非常に</em>重要であることがわかった。 自動生成されたシーケンス図は、手動で作成する場合ほど役には立たなかった。 多くの場合、他のシステムと通信しているコードのセクションから始めて、プロジェクトとそれらの外部システムとの間の呼び出しのシーケンスを構築します。</p>
+<p>とはいえ、コードのかたまりに対してシーケンス図を作成することは<em>非常に</em>重要であることがわかった。 けれども、自動生成されたシーケンス図は、手動で作成する場合ほど役には立たない。 多くの場合、私は他のシステムと通信しているコードのかたまりから手をつけて、プロジェクトとそれらの外部システムとの間の呼び出しのシーケンス図を作り上げるようにしている。</p>
 <p>また、スレッド、その他のプロセス、またはワーカーを使用するプロジェクトの一部について、シーケンス図を作成したことがあるが、何が起こるかを理解する上で非常に有用であるとわかった。</p>
 <h2><a class="anchor" aria-hidden="true" id="ファイル配置はどうなっているか？"></a><a href="#ファイル配置はどうなっているか？" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ファイル配置はどうなっているか？</h2>
 <p>コードベースを学習する3番目のコツは、 ファイルはディレクトリ構造において<em>どこ</em>に配置されているかを知ることだ。</p>
-<p>当然のことながら、RoRのように、規約ベースのプロジェクトでは、すべて同じようなレイアウトに従っているため、場所の特定が少し簡単になる。 しかし、あなたが何もする必要がないと言っているのではありません。 \ <code>lib \</code>ディレクトリの内容、部分的なビューが保存されている場所、および\ <code>app \</code>ディレクトリの下にある、予想される\ <code>assets \</code>、\ <code>models \</code>、\ <code>以外のディレクトリを確認する必要がありますコントローラ\</code>、`ビュー\ `。</p>
-<p>Javaのような言語で、ファイルとそれに関連するパッケージの物理的な場所に厳しい要件がある場合は、そのレイアウトに慣れておくと、利用可能なパッケージを見つけるのに役立ちます。</p>
-<p>Rubyのようなパッケージからファイルへの場所の要件がない言語の場合、使用されている名前空間を調べることができます。 私が取り組んできたRubyプロジェクトのほとんどすべては、Javaのような名前空間からファイルへのロケーション規則をまだ使用しています。</p>
-<p>パッケージ（または名前空間）を調べると、それらが合理的な方法でグループ化されていることがわかり、アーキテクチャレベルのモジュールを明らかにするのに役立つ場合があります。 クラスがパッケージにどのようにグループ化されているか、およびどのパッケージが一緒にグループ化されているかは、それらが同じモジュール内にあることを意味している可能性があります。</p>
+<p>当然のことながら、Ruby on Railsのように、規約ベースのプロジェクトでは、すべて同じようなレイアウトに従っているため、場所の特定が少し簡単になる。 と言っても、君が何かする必要が全くないと言っているのではない。 <code>lib</code>ディレクトリの中に何があるか見てほしい。また、ビューのファイルはどこに保存されているだろうか。 <code>app</code>ディレクトリ下には<code>assets</code>、<code>models</code>、<code>controllers</code>、<code>views</code>ディレクトリがあるはずだが、それら以外には何のディレクトリが存在するだろうか？</p>
+<p>Javaのような言語で、ファイルとそれに関連するパッケージの物理的な場所に厳しい要件がある場合は、そのディレクトリ配置に慣れておくと、利用可能なパッケージを見つけるのに役立つ。</p>
+<p>Rubyのようなパッケージからファイルへのロケーション規則がない言語の場合、使用されている名前空間を調べればよい。 私が取り組んできたRubyプロジェクトのほとんどすべては、Javaのような名前空間からファイルへのロケーション規則を使用していた。</p>
+<p>パッケージ（または名前空間）を調べると、運が良ければそれらが合理的な方法でグループ化されていることがわかり、アーキテクチャレベルのモジュールを見つけるのに役立つ場合がある。 クラスがパッケージにどのようにグループ化されているか、また、どのパッケージが一緒にグループ化されているかは、それらが同じモジュール内にあることを意味している可能性がある。</p>
 <h2><a class="anchor" aria-hidden="true" id="バグまたは小さな機能から手をつける"></a><a href="#バグまたは小さな機能から手をつける" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>バグまたは小さな機能から手をつける</h2>
 <p><img src="https://miro.medium.com/max/2560/0*yi7U2F3DTrSw3Y1n.png" alt=""></p>
-<p>Getting your hands dirty in the code and seeing how your modifications change the end product goes a long way to solidifying your understanding of the code. Starting with a low-priority, low-severity bug or feature can help ease you into making changes.</p>
-<p>To get my bearings in a new project, I have a few strategies, depending on the type of project:</p>
-<ol>
-<li><p>If the defect has a stack trace attached, I’ll start with the class that’s highest up the stack that’s <em>in the project</em> (which may not be the top, if the error occurs in a library).</p></li>
-<li><p>If the project has a user interface (UI) and the bug or feature I’m working on has a UI component, I start by searching for the literal strings that are used in the UI I want to change. I can use that as an entry point for where the interaction starts and follow it down to find where the business logic is.</p></li>
-<li><p>If the project is convention-based, I will start by looking for the view, controller, or model (or whatever design aspect probably impacts the defect or features the most) that makes the most sense. What makes sense is simply what you can guess about what classes may be involved.</p></li>
-<li><p>If the project is a web app or service, I will work to find what URL path might be involved, and find what class handles requests to that path.</p></li>
-<li><p>If the defect or feature doesn’t meet any of these other criteria, I start looking for code that may be <em>close</em> to what I want to change, which takes some educated (or uneducated) guessing. Looking at tests can also help find the code you want.</p></li>
-</ol>
-<p>Using these techniques, I can almost always find the section of code I want to modify. Then I can start playing with little changes that I can see, either in the UI, the tests, in the logs, or simply printed to standard out.</p>
-<p>Combined with tests, if they exist, these small experiments can help you quickly home in on the right section of the project. The one thing to keep in mind while doing this process is to <em>test your assumptions.</em></p>
-<p>Making assumptions about how or why something is done a certain way, without questioning and testing those assumptions, is a good way to break something. I have to constantly remind myself that certain design choices may have a very good reason for being made, even if I don’t like them or don’t see the benefit. I have to keep my newness to the codebase in the front of my mind while I dig so that I minimize the risk of breaking something.</p>
-<p>Make sure to document anything you find interesting while working through the project. If you prove an assumption false, document it. You probably won’t be the last new developer to make that assumption. By documenting your find, you’ll help speed up the process for the next developer.</p>
+<p>コードをいじって加えた変更が最終的に出力される結果がどのように変化するかを確認することは、コードの理解を深めるのに大いに役立つ。 このとき優先度が低く、重大度の低いバグ・機能から手をつけるのがおすすめだ。コードに手を加えるのが比較的容易だからだ。</p>
+<p>私の場合、新しいプロジェクトで方向を探るときはプロジェクトのタイプに応じて戦略を用意する。</p>
+<p>1）バグにスタックトレースが添付されている場合は、そのスタックトレースの中で最も高い位置に書かれているソースコード内のクラスから手をつけるようにする。 （エラーがライブラリで発生した場合、これはトップに書かれていない可能性がある）。</p>
+<p>2）そのプロジェクトがユーザーインターフェイス（UI）をもっていて、現在取り組んでいるバグまたは機能にUIコンポーネントがある場合、変更したいUIで使用されている文字列リテラルを検索することから始める。 これを作業の開始点として利用し、それを辿っていくことでビジネスロジックがどこにあるか見つけることができる。</p>
+<p>3）プロジェクトが規約ベースであれば、まず、最も理解できるビュー、コントローラー、またはモデル（または、設計の側面が欠陥や機能に最も影響を与える可能性があるもの）を探すことから始める。 「理解できる」というのは単純にどのクラスが関与しているのかについて推測可能であるという意味だ。</p>
+<p>4）プロジェクトがWebアプリ・Webサービスの場合、どのURLパスが関係している可能性があるか、また、どのクラスがそのURLパスへのリクエストを処理しているかを見つけるようにする。</p>
+<p>5）バグまたは機能が上で述べた基準のいずれにも合致しない場合は、私が変えたいものに近いコードを探し始める。当てるにはのいくらか経験が必要である（必要でない場合もある）。 テストコードを見ることも、必要なコードを見つけるのに役立つ。</p>
+<p>これらの手法を使用すると、ほとんどの場合、修正したいコードのかたまりを見つけることができる。 それから、UI、テスト、ログ、または単純な標準出力の中に確認できる小さな変化を見つけて作業を始めることができる。</p>
+<p>もしテストコードが存在していれば、これらの小さな変化とテストを組み合わせることで、関係しているコードのかたまりを正確かつ迅速に狙いをつけることができる。 このプロセスを実行する際に留意すべきことの1つは、仮説を検証することだ。</p>
+<p>人は何かを特定の方法で行う方法・理由について疑いも検証も無しに仮説を作ることで、何かを壊しがちになる。 既に特定の設計が選ばれていることは、たとえそれが自身に気に入らなかったり、メリットがわからなかったりしたとしても、何らかの十分な理由がある可能性があるということを意識する必要がある。 何かを壊すリスクを最小限に抑えるため、コードを研究している間は、そのコードベースについては自分は初心者なのだということを常に意識するようにしよう。</p>
+<p>プロジェクトの作業中に興味深いと思ったところをすべてドキュメント化するように。 仮説が間違っていたということが分かった場合は、それを文字に起こそう。 君がその仮説を立てる最後の新しい開発者ではないからだ。 見つけたことを文書化することは、将来のチームメンバーの作業をスピードアップするのに役立つだろう。</p>
 <h2><a class="anchor" aria-hidden="true" id="まとめ"></a><a href="#まとめ" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>まとめ</h2>
-<p>Dropping into a new codebase is never easy, but it doesn’t have to be overwhelming. Using simple techniques, a set of tools, and some experimenting, you can quickly <a href="https://simpleprogrammer.com/2017/06/15/learn-new-programming-language-fast/">build up your knowledge</a> and understanding of any project.</p>
-<p>When you are faced with a new codebase, remember to follow these steps:</p>
-<ol>
-<li><p>Discover the toolchain and processes used to build the project by examining the build scripts.</p></li>
-<li><p>If possible, play with the product itself once you’ve built it to see what it does.</p></li>
-<li><p>Look at the libraries that the project depends on to determine what services and systems the product uses and depends on.</p></li>
-<li><p>Use UML diagram generating tools to create class and sequence diagrams for all, or part, of your project.</p></li>
-<li><p>Create sequence diagrams by hand as you read through the code.</p></li>
-<li><p>Investigate how the product is deployed on hardware by looking at deployment scripts (like Capistrano) or documentation.</p></li>
-<li><p>Look through how the project is laid out in the filesystem as well as how classes are grouped in packages or namespaces to help uncover the architecture.</p></li>
-<li><p>Use a small feature or low-priority bug as a way to get your feet wet in the code and start understanding what the code really does. Document anything interesting you find that might help future developers understand the project faster.</p></li>
-</ol>
-<p>Like every skill, this process takes practice, and not every technique will work for every developer or project. Pay attention to what works for you for certain projects and double down on those to get really good at them. These are some of the meta-skills that experienced developers organically develop, but by learning and refining them with purpose, you can speed up the entire process.</p>
+<p>新しいコードベースに取り組むことは決して簡単ではないが、圧倒される必要はない。 シンプルなテクニック、一連のツール、およびいくつかの実験を用いることで、どんなプロジェクトでも<a href="https://simpleprogrammer.com/2017/06/15/learn-new-programming-language-fast/">知識と理解</a>をすばやく得ることができる。</p>
+<p>新しいコードベースに直面したときは、次の手順を思い出すようにしよう。</p>
+<p>1）ビルドスクリプトを調べて、プロジェクトのビルドするのに使われるツールチェーンとプロセスを解明する。</p>
+<p>2）可能であれば、プロダクトがビルドできたら実際に使って、その機能を確認してみる。</p>
+<p>3）プロジェクトが依存するライブラリを調べて、使用・依存しているサービス・システムを見つける。</p>
+<p>4）UML図の生成ツールを使用して、プロジェクトのすべてまたは一部のクラス図とシーケンス図を作成する。</p>
+<p>5）コードを読みながら、シーケンス図を手動で作成する。</p>
+<p>6）デプロイメントスクリプト（Capistranoなど）またはドキュメントを調べて、プロダクトがハードウェアにどのようにデプロイされているかを調べる。</p>
+<p>7）プロジェクトがファイルシステムにどのように配置されているか、およびクラスがパッケージまたは名前空間にどのようにグループ化されているかを確認して、アーキテクチャを明らかにする</p>
+<p>8）小さな機能または優先度の低いバグを使って、コードに足を踏み入れ、コードが実際に何をしているかを解き明かす。 将来の開発者がプロジェクトをより速く理解するのに役立つと思われる興味深いものはすべてドキュメント化する。</p>
+<p>すべてのスキルと同様に、このプロセスには実践が必要であって、すべてのテクニックがすべての開発者またはプロジェクトでうまくいくわけではない。 特定のプロジェクトで何の手法が効果的であるか意識し、うまくいった手法に注力して、本当に上手になるようにする。 これらは、経験豊富な開発者が経験論的に開発したメタスキルの一部だが、目的に合わせて学習・洗練することにより、プロセス全体をスピードアップできる。</p>
 </span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#プロダクトのコンテキストはどうなっているか？">プロダクトのコンテキストはどうなっているか？</a></li><li><a href="#プロダクトのアーキテクチャと設計はどうなっているか？">プロダクトのアーキテクチャと設計はどうなっているか？</a></li><li><a href="#アーキテクチャを解き明かす">アーキテクチャを解き明かす</a></li><li><a href="#設計を解き明かす">設計を解き明かす</a></li><li><a href="#ファイル配置はどうなっているか？">ファイル配置はどうなっているか？</a></li><li><a href="#バグまたは小さな機能から手をつける">バグまたは小さな機能から手をつける</a></li><li><a href="#まとめ">まとめ</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Categories</h5><a href="/docs/ja/qiita/index.html">Qiita</a><a href="/docs/ja/udemy/index.html">Udemy</a><a href="/docs/ja/dao/index.html">DAO</a></div><div><h5>Community</h5><a href="https://discord.gg/xCRqdUU" target="_blank" rel="noreferrer noopener">Project Chat</a><a href="https://twitter.com/babydegu" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/baby-degu">GitHub</a><a class="github-button" href="https://github.com/baby-degu/portal" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><div class="social"><a href="https://twitter.com/babydegu" class="twitter-follow-button">Follow @babydegu</a></div></div></section><section class="copyright"><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer noopener">Content is licensed under CC BY-SA 4.0</a></section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
