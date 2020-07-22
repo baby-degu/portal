@@ -16,7 +16,7 @@ Which is why more and more programmers are adopting other languages — the top 
 
 Since data scientists and AI specialists deal with lots of mathematical problems, Julia is the winner for them. And even upon critical scrutiny, Julia has upsides that Python can’t beat.
 
-[Why Python is not the programming language of the future](/why-python-is-not-the-programming-language-of-the-future-30ddc5339b66)
+> - [Why Python is not the programming language of the future](/why-python-is-not-the-programming-language-of-the-future-30ddc5339b66)
 
 ## The Zen of Python versus the Greed of Julia
 
@@ -26,8 +26,7 @@ In this sense, Guido van Rossum created Python in the late 1980s to improve ABC.
 
 In contrast, Python is quite pragmatic. You can see this in the [Zen of Python](https://www.python.org/dev/peps/pep-0020/), which reflects the intention that the creators have:
 
-```
-Beautiful is better than ugly.  
+> Beautiful is better than ugly.  
 Explicit is better than implicit.  
 Simple is better than complex.  
 Complex is better than complicated.  
@@ -36,8 +35,7 @@ Sparse is better than dense.
 Readability counts.  
 Special cases aren't special enough to break the rules.  
 Although practicality beats purity.  
-[...]
-```
+[\...\]
 
 Python still kept the good features of ABC: Readability, simplicity, and beginner-friendliness for example. But Python is far more robust and adapted to real life than ABC ever was.
 
@@ -49,11 +47,16 @@ In the same sense, the creators of Julia want to keep the good parts of other la
 
 This is how [Julia’s creators](https://julialang.org/blog/2012/02/why-we-created-julia/) say it:
 
-```
-We are greedy: we want more.
 
-We want a language that's open source, with a liberal license. We want the speed of C with the dynamism of Ruby. We want a language that's homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab. We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell. Something that is dirt simple to learn, yet keeps the most serious hackers happy. We want it interactive and we want it compiled.
-```
+> We are greedy: we want more.
+>
+> We want a language that's open source, with a liberal license.
+We want the speed of C with the dynamism of Ruby.
+We want a language that's homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab.
+We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell.
+Something that is dirt simple to learn, yet keeps the most serious hackers happy.
+We want it interactive and we want it compiled.
+
 
 Julia wants to blend all upsides that currently exist, and not trade them off for the downsides in other languages. And even though Julia is a young language, it has already achieved a lot of the goals that the creators set.
 
@@ -71,7 +74,7 @@ Julia’s creators wanted to make a language that is as fast as C — but what t
 
 In 2017, Julia even joined the [Petaflop Club](https://www.hpcwire.com/off-the-wire/julia-joins-petaflop-club/) — the small club of languages who can exceed speeds of one petaflop per second at peak performance. Apart from Julia, only C, C++ and Fortran are [in the club](https://www.nextplatform.com/2017/11/28/julia-language-delivers-petascale-hpc-performance/) right now.
 
-[Ten Tricks To Speed Up Your Python Codes](/ten-tricks-to-speed-up-your-python-codes-c38abdb89f18)
+> - [Ten Tricks To Speed Up Your Python Codes](/ten-tricks-to-speed-up-your-python-codes-c38abdb89f18)
 
 ### Community
 
@@ -105,7 +108,7 @@ Since the Julia-creators also wanted it to be easy to learn, Julia fully support
 
 This can save you a ton of time: Instead of finding [excuses for not testing](https://medium.com/better-programming/9-excuses-why-programmers-dont-test-their-code-8860a616b1b5) your code, you can specify the type wherever it makes sense.
 
-[5 Ways Julia Is Better Than Python](/5-ways-julia-is-better-than-python-334cc66d64ae)
+> - [5 Ways Julia Is Better Than Python](/5-ways-julia-is-better-than-python-334cc66d64ae)
 
 ## The data: Invest in things while they’re small
 
@@ -145,8 +148,8 @@ With Julia-skills, not only are you showing that you have interests beyond the j
 
 You — and the other Julia programmers — are future rockstars, and you know it. Or, as [Julia’s creators](https://julialang.org/blog/2012/02/why-we-created-julia/) said it in 2012:
 
-```
-Even though we recognize that we are inexcusably greedy, we still want to have it all. About two and a half years ago, we set out to create the language of our greed. It's not complete, but it's time for a 1.0 release — the language we've created is called [Julia](https://julialang.org/). It already delivers on 90% of our ungracious demands, and now it needs the ungracious demands of others to shape it further. So, if you are also a greedy, unreasonable, demanding programmer, we want you to give it a try.
-```
+
+> Even though we recognize that we are inexcusably greedy, we still want to have it all.About two and a half years ago, we set out to create the language of our greed. It's not complete, but it's time for a 1.0 release — the language we've created is called [Julia](https://julialang.org/). It already delivers on 90% of our ungracious demands, and now it needs the ungracious demands of others to shape it further. So, if you are also a greedy, unreasonable, demanding programmer, we want you to give it a try.
+
 
 Python is still insanely popular. But if you learn Julia now, that could be your golden ticket later on. In this sense: Bye-bye Python. Hello Julia!
