@@ -19,31 +19,41 @@
 <p>But if you’ve ever been at a dinner table with these people, you also know how much they rant about the weaknesses of Python. From being slow to requiring excessive testing, to producing runtime errors despite prior testing — there’s enough to be pissed off about.</p>
 <p>Which is why more and more programmers are adopting other languages — the top players being Julia, Go, and Rust. Julia is great for mathematical and technical tasks, while Go is awesome for modular programs, and Rust is the top choice for systems programming.</p>
 <p>Since data scientists and AI specialists deal with lots of mathematical problems, Julia is the winner for them. And even upon critical scrutiny, Julia has upsides that Python can’t beat.</p>
-<p><a href="/why-python-is-not-the-programming-language-of-the-future-30ddc5339b66">Why Python is not the programming language of the future</a></p>
+<blockquote>
+<ul>
+<li><a href="/why-python-is-not-the-programming-language-of-the-future-30ddc5339b66">Why Python is not the programming language of the future</a></li>
+</ul>
+</blockquote>
 <h2><a class="anchor" aria-hidden="true" id="the-zen-of-python-versus-the-greed-of-julia"></a><a href="#the-zen-of-python-versus-the-greed-of-julia" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Zen of Python versus the Greed of Julia</h2>
 <p>When people create a new programming language, they do so because they want to keep the good features of old languages and fix the bad ones.</p>
 <p>In this sense, Guido van Rossum created Python in the late 1980s to improve ABC. The latter was <a href="https://homepages.cwi.nl/~steven/abc/">too perfect</a> for a programming language — while its rigidity made it easy to teach, it was hard to use in real life.</p>
 <p>In contrast, Python is quite pragmatic. You can see this in the <a href="https://www.python.org/dev/peps/pep-0020/">Zen of Python</a>, which reflects the intention that the creators have:</p>
-<pre><code class="hljs">Beautiful is better than ugly.  
-Explicit is better than implicit.  <span class="hljs-built_in">
-Simple </span>is better than complex.  
-Complex is better than complicated.  
-Flat is better than nested.  
-Sparse is better than dense.  
-Readability counts.  
-Special cases aren<span class="hljs-string">'t special enough to break the rules.  
-Although practicality beats purity.  
-[...]
-</span></code></pre>
+<blockquote>
+<p>Beautiful is better than ugly.<br>
+Explicit is better than implicit.<br>
+Simple is better than complex.<br>
+Complex is better than complicated.<br>
+Flat is better than nested.<br>
+Sparse is better than dense.<br>
+Readability counts.<br>
+Special cases aren't special enough to break the rules.<br>
+Although practicality beats purity.<br>
+[...]</p>
+</blockquote>
 <p>Python still kept the good features of ABC: Readability, simplicity, and beginner-friendliness for example. But Python is far more robust and adapted to real life than ABC ever was.</p>
 <p><img src="https://miro.medium.com/max/5760/1*97qhZW3cfSEKyhogGDabdg.jpeg" alt="Letters BCA written on concrete"></p>
 <p>ABC paved the way for Python, which is paving the way for Julia. Photo by <a href="https://unsplash.com/@daveballew?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Ballew</a> on <a href="https://unsplash.com/s/photos/language?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 <p>In the same sense, the creators of Julia want to keep the good parts of other languages and ditch the bad ones. But Julia is a lot more ambitious: instead of replacing one language, it wants to beat them all.</p>
 <p>This is how <a href="https://julialang.org/blog/2012/02/why-we-created-julia/">Julia’s creators</a> say it:</p>
-<pre><code class="hljs">We are greedy: we want more.
-
-We want a language <span class="hljs-keyword">that</span>'s open source, <span class="hljs-keyword">with</span> a liberal license. We want <span class="hljs-keyword">the</span> speed <span class="hljs-keyword">of</span> C <span class="hljs-keyword">with</span> <span class="hljs-keyword">the</span> dynamism <span class="hljs-keyword">of</span> Ruby. We want a language <span class="hljs-keyword">that</span>'s homoiconic, <span class="hljs-keyword">with</span> <span class="hljs-literal">true</span> macros like Lisp, <span class="hljs-keyword">but</span> <span class="hljs-keyword">with</span> obvious, familiar mathematical notation like Matlab. We want something <span class="hljs-keyword">as</span> usable <span class="hljs-keyword">for</span> general programming <span class="hljs-keyword">as</span> Python, <span class="hljs-keyword">as</span> easy <span class="hljs-keyword">for</span> statistics <span class="hljs-keyword">as</span> R, <span class="hljs-keyword">as</span> natural <span class="hljs-keyword">for</span> <span class="hljs-built_in">string</span> processing <span class="hljs-keyword">as</span> Perl, <span class="hljs-keyword">as</span> powerful <span class="hljs-keyword">for</span> linear algebra <span class="hljs-keyword">as</span> Matlab, <span class="hljs-keyword">as</span> good <span class="hljs-keyword">at</span> gluing programs together <span class="hljs-keyword">as</span> <span class="hljs-keyword">the</span> shell. Something <span class="hljs-keyword">that</span> <span class="hljs-keyword">is</span> dirt simple <span class="hljs-keyword">to</span> learn, yet keeps <span class="hljs-keyword">the</span> most serious hackers happy. We want <span class="hljs-keyword">it</span> interactive <span class="hljs-keyword">and</span> we want <span class="hljs-keyword">it</span> compiled.
-</code></pre>
+<blockquote>
+<p>We are greedy: we want more.</p>
+<p>We want a language that's open source, with a liberal license.
+We want the speed of C with the dynamism of Ruby.
+We want a language that's homoiconic, with true macros like Lisp, but with obvious, familiar mathematical notation like Matlab.
+We want something as usable for general programming as Python, as easy for statistics as R, as natural for string processing as Perl, as powerful for linear algebra as Matlab, as good at gluing programs together as the shell.
+Something that is dirt simple to learn, yet keeps the most serious hackers happy.
+We want it interactive and we want it compiled.</p>
+</blockquote>
 <p>Julia wants to blend all upsides that currently exist, and not trade them off for the downsides in other languages. And even though Julia is a young language, it has already achieved a lot of the goals that the creators set.</p>
 <h2><a class="anchor" aria-hidden="true" id="what-julia-developers-are-loving"></a><a href="#what-julia-developers-are-loving" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What Julia developers are loving</h2>
 <h3><a class="anchor" aria-hidden="true" id="versatility"></a><a href="#versatility" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Versatility</h3>
@@ -52,7 +62,11 @@ We want a language <span class="hljs-keyword">that</span>'s open source, <span c
 <h3><a class="anchor" aria-hidden="true" id="speed"></a><a href="#speed" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Speed</h3>
 <p>Julia’s creators wanted to make a language that is as fast as C — but what they created is <a href="https://theiotmagazine.com/julia-vs-python-will-it-unseat-the-king-of-programming-8220e4cd2e0a">even faster</a>. Even though Python has become easier to speed up in recent years, its performance is still a far cry from what Julia can do.</p>
 <p>In 2017, Julia even joined the <a href="https://www.hpcwire.com/off-the-wire/julia-joins-petaflop-club/">Petaflop Club</a> — the small club of languages who can exceed speeds of one petaflop per second at peak performance. Apart from Julia, only C, C++ and Fortran are <a href="https://www.nextplatform.com/2017/11/28/julia-language-delivers-petascale-hpc-performance/">in the club</a> right now.</p>
-<p><a href="/ten-tricks-to-speed-up-your-python-codes-c38abdb89f18">Ten Tricks To Speed Up Your Python Codes</a></p>
+<blockquote>
+<ul>
+<li><a href="/ten-tricks-to-speed-up-your-python-codes-c38abdb89f18">Ten Tricks To Speed Up Your Python Codes</a></li>
+</ul>
+</blockquote>
 <h3><a class="anchor" aria-hidden="true" id="community"></a><a href="#community" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Community</h3>
 <p>With its more than 30 years of age, Python has an enormous and supportive community. There is hardly a Python-related question that you can’t get answered within one Google search.</p>
 <p>In contrast, the Julia community is pretty tiny. While this means that you might need to dig a bit further to find an answer, you might link up with the same people again and again. And this can turn into programmer-relationships that are beyond value.</p>
@@ -69,7 +83,11 @@ We want a language <span class="hljs-keyword">that</span>'s open source, <span c
 <p>While this is extremely beginner-friendly, it also introduces a whole host of possible bugs. This means that you need to test Python code in all possible scenarios — which is quite a dumb task that takes a lot of time.</p>
 <p>Since the Julia-creators also wanted it to be easy to learn, Julia fully supports dynamical typing. But in contrast to Python, you can introduce static types if you like — in the way they are present in C or Fortran, for example.</p>
 <p>This can save you a ton of time: Instead of finding <a href="https://medium.com/better-programming/9-excuses-why-programmers-dont-test-their-code-8860a616b1b5">excuses for not testing</a> your code, you can specify the type wherever it makes sense.</p>
-<p><a href="/5-ways-julia-is-better-than-python-334cc66d64ae">5 Ways Julia Is Better Than Python</a></p>
+<blockquote>
+<ul>
+<li><a href="/5-ways-julia-is-better-than-python-334cc66d64ae">5 Ways Julia Is Better Than Python</a></li>
+</ul>
+</blockquote>
 <h2><a class="anchor" aria-hidden="true" id="the-data-invest-in-things-while-theyre-small"></a><a href="#the-data-invest-in-things-while-theyre-small" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The data: Invest in things while they’re small</h2>
 <p><img src="https://miro.medium.com/max/1778/1*yrROSthNbyXZ0Y2OROViHg.png" alt="Image for post"></p>
 <p><img src="https://miro.medium.com/max/1792/1*PGUf9a749e6tOjmyelBERg.png" alt="Image for post"></p>
@@ -89,7 +107,8 @@ We want a language <span class="hljs-keyword">that</span>'s open source, <span c
 <p>On the other hand, you have a real edge if you can put Julia on your CV. Because let’s be honest, what distinguishes you from any other Pythonista out there? Not much. But there won’t be that many Julia-programmers out there, even in three years’ time.</p>
 <p>With Julia-skills, not only are you showing that you have interests beyond the job requirements. You’re also demonstrating that you’re eager to learn and that you have a broader sense of what it means to be a programmer. In other words, you’re fit for the job.</p>
 <p>You — and the other Julia programmers — are future rockstars, and you know it. Or, as <a href="https://julialang.org/blog/2012/02/why-we-created-julia/">Julia’s creators</a> said it in 2012:</p>
-<pre><code class="hljs">Even though we recognize that we are inexcusably greedy, we still want <span class="hljs-keyword">to</span> have it all. About two <span class="hljs-keyword">and</span> a half years ago, we <span class="hljs-keyword">set</span> out <span class="hljs-keyword">to</span> create the language <span class="hljs-keyword">of</span> our greed. It<span class="hljs-comment">'s not complete, but it's time for a 1.0 release — the language we've created is called [Julia](https://julialang.org/). It already delivers on 90% of our ungracious demands, and now it needs the ungracious demands of others to shape it further. So, if you are also a greedy, unreasonable, demanding programmer, we want you to give it a try.</span>
-</code></pre>
+<blockquote>
+<p>Even though we recognize that we are inexcusably greedy, we still want to have it all.About two and a half years ago, we set out to create the language of our greed. It's not complete, but it's time for a 1.0 release — the language we've created is called <a href="https://julialang.org/">Julia</a>. It already delivers on 90% of our ungracious demands, and now it needs the ungracious demands of others to shape it further. So, if you are also a greedy, unreasonable, demanding programmer, we want you to give it a try.</p>
+</blockquote>
 <p>Python is still insanely popular. But if you learn Julia now, that could be your golden ticket later on. In this sense: Bye-bye Python. Hello Julia!</p>
 </span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-7-22 by M. Ueno</em></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#the-zen-of-python-versus-the-greed-of-julia">The Zen of Python versus the Greed of Julia</a></li><li><a href="#what-julia-developers-are-loving">What Julia developers are loving</a><ul class="toc-headings"><li><a href="#versatility">Versatility</a></li><li><a href="#speed">Speed</a></li><li><a href="#community">Community</a></li><li><a href="#code-conversion">Code conversion</a></li><li><a href="#libraries">Libraries</a></li><li><a href="#dynamic-and-static-types">Dynamic and static types</a></li></ul></li><li><a href="#the-data-invest-in-things-while-theyre-small">The data: Invest in things while they’re small</a></li><li><a href="#bottom-line-do-julia-and-let-it-be-your-edge">Bottom line: Do Julia and let it be your edge</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Categories</h5><a href="/docs/en/qiita/index.html">Qiita</a><a href="/docs/en/udemy/index.html">Udemy</a><a href="/docs/en/dao/index.html">DAO</a></div><div><h5>Community</h5><a href="https://discord.gg/xCRqdUU" target="_blank" rel="noreferrer noopener">Project Chat</a><a href="https://twitter.com/babydegu" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/baby-degu">GitHub</a><a class="github-button" href="https://github.com/baby-degu/portal" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><div class="social"><a href="https://twitter.com/babydegu" class="twitter-follow-button">Follow @babydegu</a></div></div></section><section class="copyright"><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer noopener">Content is licensed under CC BY-SA 4.0</a></section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
