@@ -1,13 +1,14 @@
 # Bye-bye Python. Hello Julia!
 
 As Python’s lifetime grinds to a halt, a hot new competitor is emerging
+
 ---
 
 ![Woman with hat covering her face in front of sunset](https://miro.medium.com/max/6000/1*jJCYqdN8a0xJ3iYa9PFT-g.jpeg)
 
 If Julia is still a mystery to you, don’t worry. Photo by [Julia Caesar](https://unsplash.com/@juliacaesar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/julia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-![D](https://miro.medium.com/max/158/1*1LK09tSgMaNjHjMz6-Wxbg.jpeg)Don’t get me wrong. Python’s popularity is still backed by a rock-solid community of computer scientists, data scientists and AI specialists.
+![D](https://miro.medium.com/max/158/1*1LK09tSgMaNjHjMz6-Wxbg.jpeg)on’t get me wrong. Python’s popularity is still backed by a rock-solid community of computer scientists, data scientists and AI specialists.
 
 But if you’ve ever been at a dinner table with these people, you also know how much they rant about the weaknesses of Python. From being slow to requiring excessive testing, to producing runtime errors despite prior testing — there’s enough to be pissed off about.
 
