@@ -1,5 +1,4 @@
 # When To Use Node.js as a Back-End
-=================================
 
 ![node.js back-end](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E)
 
@@ -21,8 +20,7 @@ The [appearance of Node.js in 2009](http://www.amazon.com/exec/obidos/ASIN/16172
 
 Thus, Node.js offered limitless opportunities for developers. For the first time, it could be used anywhere. There is only one question left to ask: When should it be used for developing the back-end of web-based products? This is what we’ll be tackling in this post: three major cases when Node.js should be the technology of choice for back-end development.
 
-Node.js as a Back-End: Key Use Cases
-------------------------------------
+## Node.js as a Back-End: Key Use Cases
 
 Despite all the benefits it offers, Node.js is neither a panacea nor a one-size-fits-all solution. There are cases when it is a perfect choice for back-end development and cases when you should opt for a different programming language. So, here, I will shed light on three use cases when Node.js is the number one choice.
 
@@ -73,8 +71,7 @@ A typical computational load of a chat or even a simplistic web game is usually 
 
 Moreover, the single-threaded computing advantage will stay even if you choose to avoid JavaScript for front-end solutions. Thus, you will be able to easily extend the critical benefits of JavaScript to smartphone or even desktop application development.
 
-When You Should Avoid Node.js in Back-End Development
------------------------------------------------------
+## When You Should Avoid Node.js in Back-End Development
 
 As I have noted, the primary strength of Node.js is its single-threaded nature. It significantly decreases the complexity of handling various requests when you have hundreds, thousands, or even hundreds of thousands of users with limited requests when it comes to sheer computational power.
 
@@ -88,10 +85,7 @@ It is easier to offload all calculations to user PCs, making offline programs fo
 
 Node.js is a niche product that is oriented at the everyday needs of non-advanced PC users; if you go outside of this safe zone, you are essentially shooting yourself in the foot. Complex calculations should be dedicated only to classical development solutions.
 
-Node.js: The Dream Framework
-----------------------------
-
-![node.js back-end](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E)
+## Node.js: The Dream Framework
 
 ![node.js back-end](https://spzone-simpleprogrammer.netdna-ssl.com/wp-content/uploads/2020/06/programmer-dream.png)
 
