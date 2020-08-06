@@ -1,7 +1,5 @@
 # When To Use Node.js as a Back-End
 
-![node.js back-end](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E)
-
 ![node.js back-end](https://spzone-simpleprogrammer.netdna-ssl.com/wp-content/uploads/2020/06/When-To-Use-Node.js-as-a-Back-End-square.png)
 
 JavaScript is among the most popular programming languages in the world. It is rivaled only by Python and Java under current conditions, holding an approximately 8% share in the computing market.
@@ -36,8 +34,6 @@ Similar logic applies to the new web apps that are likely to use JavaScript for 
 
 ### Use Case 2. You Want To Significantly Decrease Development Costs of Your Web-Based Solutions
 
-![node.js back-end](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20279%20279'%3E%3C/svg%3E)
-
 ![node.js back-end](https://spzone-simpleprogrammer.netdna-ssl.com/wp-content/uploads/2020/06/Decrease-Development-flat.png)
 
 One of the primary strengths of JavaScript is its simplicity. I would argue that it is significantly easier to learn than C++, Python, or even Java. Consequently, you will be able to dramatically decrease your operational costs even if you opt to abstain from full-stack development, creating front-end via different tools.
@@ -62,12 +58,12 @@ Traditional multithreading can bottleneck your performance, since the number of 
 
 A typical computational load of a chat or even a simplistic web game is usually rather limited when it comes to the back-end. Consequently, Node.js will significantly increase your capacity to build scalable solutions for a large number of users. The Node.js use cases are endless today. Back-end Node.js solutions are actively used in many areas today:
 
-*   Web chat development
-*   Creation of simple web-based games
-*   Social media sites (for instance, Facebook)
-*   Video streaming websites such as Netflix
-*   Online document editing applications
-*   Various database applications aimed at providing small bits of information to users (web applications for stock exchange brokers already use Node.js to drive financial innovations)
+- Web chat development
+- Creation of simple web-based games
+- Social media sites (for instance, Facebook)
+- Video streaming websites such as Netflix
+- Online document editing applications
+- Various database applications aimed at providing small bits of information to users (web applications for stock exchange brokers already use Node.js to drive financial innovations)
 
 Moreover, the single-threaded computing advantage will stay even if you choose to avoid JavaScript for front-end solutions. Thus, you will be able to easily extend the critical benefits of JavaScript to smartphone or even desktop application development.
 
@@ -91,8 +87,8 @@ Node.js is a niche product that is oriented at the everyday needs of non-advance
 
 Node.js undoubtedly represents one of the most robust and interesting back-end development solutions of the modern era. This platform should be of interest to many individuals employed in IT-related management and development:
 
-*   If you are an entrepreneur, the use of the Node web development services can offer you a perfect opportunity to cut costs in web development.
-*   If you are a web developer, Node.js can serve as a perfect path toward [full-stack JavaScript development](https://keenethics.com/).
+- If you are an entrepreneur, the use of the Node web development services can offer you a perfect opportunity to cut costs in web development.
+- If you are a web developer, Node.js can serve as a perfect path toward [full-stack JavaScript development](https://keenethics.com/).
 
 Few platforms can offer such robustness in the development world. Thus, I really recommend Node.js for all types of web development.
 
