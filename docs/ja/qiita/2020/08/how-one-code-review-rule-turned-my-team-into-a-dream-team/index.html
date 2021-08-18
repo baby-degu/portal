@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>qiita/2020/08/how-one-code-review-rule-turned-my-team-into-a-dream-team · baby-degu</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="私のチームをドリームチームに変えた1つのコードレビューのルール"/><meta name="docsearch:language" content="ja"/><meta property="og:title" content="qiita/2020/08/how-one-code-review-rule-turned-my-team-into-a-dream-team · baby-degu"/><meta property="og:type" content="website"/><meta property="og:url" content="https://baby-degu.github.io/"/><meta property="og:description" content="私のチームをドリームチームに変えた1つのコードレビューのルール"/><meta property="og:image" content="https://baby-degu.github.io/img/baby-degu.jpg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://baby-degu.github.io/img/baby-degu.jpg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://baby-degu.github.io/blog/atom.xml" title="baby-degu Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://baby-degu.github.io/blog/feed.xml" title="baby-degu Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/ja"><h2 class="headerTitle">baby-degu</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/ja/" target="_self">Projects</a></li><li class=""><a href="https://github.com/baby-degu/portal" target="_blank">Github</a></li><li class=""><a href="/blog/" target="_self">ブログ</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg" alt="Languages icon"/>日本語</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/qiita/2020/08/how-one-code-review-rule-turned-my-team-into-a-dream-team">English</a></li></ul></div></li><script>
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>qiita/2020/08/how-one-code-review-rule-turned-my-team-into-a-dream-team · baby-degu</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="私のチームをドリームチームに変えたコードレビューのルール"/><meta name="docsearch:language" content="ja"/><meta property="og:title" content="qiita/2020/08/how-one-code-review-rule-turned-my-team-into-a-dream-team · baby-degu"/><meta property="og:type" content="website"/><meta property="og:url" content="https://baby-degu.github.io/"/><meta property="og:description" content="私のチームをドリームチームに変えたコードレビューのルール"/><meta property="og:image" content="https://baby-degu.github.io/img/baby-degu.jpg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://baby-degu.github.io/img/baby-degu.jpg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://baby-degu.github.io/blog/atom.xml" title="baby-degu Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://baby-degu.github.io/blog/feed.xml" title="baby-degu Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/ja"><h2 class="headerTitle">baby-degu</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/ja/" target="_self">Projects</a></li><li class=""><a href="https://github.com/baby-degu/portal" target="_blank">Github</a></li><li class=""><a href="/blog/" target="_self">ブログ</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg" alt="Languages icon"/>日本語</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docs/en/qiita/2020/08/how-one-code-review-rule-turned-my-team-into-a-dream-team">English</a></li></ul></div></li><script>
         const languagesMenuItem = document.getElementById("languages-menu");
         const languagesDropDown = document.getElementById("languages-dropdown");
         languagesMenuItem.addEventListener("click", function(event) {
@@ -10,16 +10,16 @@
             languagesDropDown.className = "hide";
           }
         });
-      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">qiita/2020/08/how-one-code-review-rule-turned-my-team-into-a-dream-team</h1></header><article><div><span><p>私のチームをドリームチームに変えた1つのコードレビューのルール</p>
-<p>コードのレビューに費やす時間は、有意義に費やされた時間です。</p>
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">qiita/2020/08/how-one-code-review-rule-turned-my-team-into-a-dream-team</h1></header><article><div><span><p>私のチームをドリームチームに変えたコードレビューのルール</p>
+<p>コードのレビューに費やす時間は、有意義な時間です。</p>
 <p>（不要） 投稿用画像</p>
 <p>次のシナリオを考えます。</p>
 <blockquote>
 <p>プロダクトオーナーのボブは、3人の開発者（アリス、ケイス、デューク）のチームに、彼らが提出したばかりのコードに関して急速な修正のお願いをSlackで伝えています。 翌日の午前10時にクライアントとのミーティングがあり、ボブがデモできるように修正されていないといけません。 今は午後6時です。 アリスは退社していて、ケイスは別荘に行く途中です（彼女は休暇を取りました）。 しかし、デュークは偶然にも彼のノートパソコンの前にいます。</p>
 </blockquote>
-<p>これが次に起こることです。</p>
+<p>次に何が起こるか</p>
 <ul>
-<li>デュークはボブのメッセージを見て、問題なく変更できることをボブに知らせます。 しかし、彼は家族との約束があるので、今日の夜9時から明日の朝までは作業できません。 そのため、デュークは明日の午前中に修正反映のコミットのプッシュやサポートを行うことはできないかもしれません。</li>
+<li>デュークはボブのメッセージを見て、問題なく変更できることをボブに知らせます。 しかし、彼は家族との約束があるので、明日の夜9時から朝までは出られません。 そのため、デュークは明日の午前中に修正反映のコミットのプッシュやサポートを行うことはできないかもしれません。</li>
 <li>乗客として後部座席に座っているケイスがSlackでこれを見て、「問題ありません。何か仕上げが必要な場合は、午前中にそこにいるようにします」と言います。</li>
 <li>デュークはコードを書き始め、プルリクエスト（PR）をオープンします。</li>
 <li>午後8時、アリスは家に着いてSlackを見て、今すぐ手助けできることをチームに知らせます。 彼女はデュークのPRを見て、急な対応だったためテストが抜けていることに気付き、テストを追加することにしました。 要件はSlackにあり、各自のフォークで共同作業できるため、これは問題ではありません。</li>
@@ -27,7 +27,7 @@
 <li>午後10時、アリスはテストを終え、その頃にはケイスはオンラインになり、レビューができるようになっています。 ケイスはバグを見つけて（アリスはかなり眠いので、彼女は覚えていた要件のうちのいくつかを元に戻しました）、アリスはコードを少し変えた後、プッシュして反映させます。</li>
 <li>朝になると、ケイスは、ボブからの土壇場での追加の要件のために、さらにいくつかの変更を加え、それらをプッシュして反映させます。 デュークはボブからの電話で伝えられた2つ目のPRを承認します（デュークは心配して出勤していました）。 クライアントとのミーティングは大成功です。</li>
 </ul>
-<p>性別を逆にすると、これは実は私のチームで木曜日の深夜に起こったことです。 とても誇りに思いました。 珍しいことに、私が24歳のときに感じていた、スタートアップのために徹夜していたのは、ばかげたプライドではありませんでした。私を見てください。私の仕事は非常に重要です。もしも私が1日24時間働かなかったら、おしまいでしょう。</p>
+<p>性別を逆にすると、これは実は私のチームで木曜日の深夜に起こったことです。 とても誇りに思いました。 珍しいことに、私が24歳のときに感じていた、スタートアップのために徹夜していたのは、ばかげたプライドのためではありませんでした。私を見てください。私の仕事は非常に重要です。もしも私が1日24時間働かなかったら、おしまいでしょう。</p>
 <p>今回、私の誇りはさまざまなものによって支えられました。</p>
 <ul>
 <li>私のチームの3人の開発者はすべて、コードに等しく精通しており、変更を加えて作業をレビューするために等しく準備できていました。</li>
@@ -41,36 +41,36 @@
 <li>チームの友情とお互いに対する信頼は、史上最高でした！</li>
 </ul>
 <p>同じチームで1年が経とうとしていますが、この頃になるとコードに慣れすぎてしまい、チームを変えた方がいいのでしょうか？ さて、検討すべき理由はいくつかあります。挑戦していますか？ ロードマップには何がありますか？ あなたのキャリアプランは何ですか？ ここではそのいずれにも触れません。 私が話したいのは、私が特にこのチームで働くことが大好きで、切り替えたくないということです。</p>
-<p>それについて考えたとき、私は自分のチームで作業するのが好きだと気付きました。誰がチームにいて、チームで何をしているなどは関係なくです。 私は私たちの働き方が大好きです：</p>
+<p>それについて考えたとき、私は自分のチームで作業するのが好きだと気付きました。誰がチームにいて、チームで何をしているなどは関係なくです。 私は私たちのやり方が大好きです：</p>
 <ul>
-<li>チーム全体が私たちが所有するコードベースのほとんどを知っているので、すべての議論/設計/アーキテクチャ構築を同時に行います。 これにより、非常に多様なアイデアと堅牢な技術設計が生まれます（幸い、私たちのチームはかなり多様性が高いです）。</li>
+<li>チーム全体が私たちが所有するコードベースのほとんどを知っているので、すべての議論/設計＆アーキテクチャ構築を同時に行います。 これにより、非常に多様なアイデアと堅牢な技術設計が生まれます（幸い、私たちのチームはかなり多様性が高いです）。</li>
 <li>一部の人が作業できない緊急時にそのメンバーの作業を分担することができます。</li>
 <li>私たちは頻繁にリファクタリングと検証を行います。そしてそれを安全にできると思っています。</li>
 </ul>
 <p>どうやってそこまで辿り着いたのでしょうか？ その秘訣はチームのために設定したプルリクエストレビューのルールとガイドラインです。</p>
-<p>チームが結成されたとき、たった3人の開発者とプロダクトオーナー、マネージャーの片方しかいませんでした（私たちのマネージャーの残りの片方は、より大きなチームの管理で忙しすぎて参加できませんした）。 私たちは、私たちの人数が非常に少ないので、私たちは一丸になって仕事をした方が良いだろう と判断しました。 そこで私たちは、PRレビュールールを思い付きました。誰か一人が何を書いたとしても、残りの２人は冷静にレビューしないといけません。 次に、お互いのPRを一貫してレビューし続けたため、ルールセットをいくつかのガイドラインに拡大しました。</p>
-<p>私はこれらのルールとガイドラインをここに書き留めています。多分、何人かの人々はそれらが彼らのチームに役立つと思うでしょう。 あるいは、これらはあなたに思考の糧を与え、あなたは完全に異なるアイデアを思いつくでしょう。</p>
+<p>チームが結成されたとき、たった3人の開発者とプロダクトオーナー、マネージャーの半分しかいませんでした（私たちのマネージャーの残りの半分は、より大きなチームの管理で忙しすぎて参加できませんした）。 私たちは、私たちの人数が非常に少ないので、私たちは一丸になって仕事をした方が良いだろう と判断しました。 そこで私たちは、PRレビュールールを思い付きました。誰か一人が何を書いたとしても、残りの２人は冷静にレビューしないといけません。 それから、お互いのPRを一貫してレビューし続けるうちに、このルールセットをいくつかのガイドラインとしてまとめました。</p>
+<p>私はこれらのルールとガイドラインをここに書き留めています。というのもこれらが自分たちのチームに役立つと感じる方もいるかもしれないと思ったからです。 あるいは、これらのルールは思考の糧を与えて、あなたは完全に異なるアイデアを思いつくことになるかもしれません。</p>
 <p>ルール1 各PRレビューには、少なくとも同チーム内の開発者２人の承認がないとならない。 マネージャーの承認はカウントされません。</p>
-<p>ここで最初に注意する点は、3人のチームとして開始して以来、これは理想的でした。 3人の開発者全員が100％の時間を知っていました。 より大きなチームでは、これは異なる場合があります。 あなたが目指しているのは、ダンブルドアホークリュクスの状況です。あなたが死んでしまったとしても、少なくとも2〜3人がホークリュクスについて知っています。 私たちのチームは現在5人の開発者で、2つの古いタイマー、1つの新しいタイマー、2つの中間のタイマーがあります。 私たちはまだ誰もがすべての人のPRをレビューするモデルに固執しようとしていますが、1つの古いタイマー+ 1つの他の開発者の最小に切り替えることは意味があるかもしれません。</p>
-<p>「マネージャーの承認は重要ではありません」—これはおそらく「何を？ 私はマネージャーであり、すばらしいコーダーであり、私のレビューは完全に重要です。 マネージャーのレビューが役立ちます。 私たちには素晴らしいプログラマーである素晴らしいマネージャーがいます。彼らがレビューする時間があるとき、彼らはしばしば私たちを助けるための素晴らしいヒントやアイデアを持っています。</p>
-<p>ただし、マネージャーがコーディングに費やす時間を考慮する必要があります。 50％以上ですか？ それから彼らも開発者なので、大丈夫、数えてみましょう。 ただし、当社では、開発マネージャーはあまりコーディングはしておりません。 結局のところ、記述されているコードに共存しなければならないのは開発者です。 したがって、開発者は最終決定権を取得します。 チームに3人の開発者がまだそれを見る機会がなかったとしても、マネージャーが1人の開発者のPRを承認し続けるという、マネージャーと開発者の無限の承認サイクルを見ることは本当に嫌いです。</p>
+<p>ここで最初にコメントすべきは、3人のチームとして開始したので、これは理想的だったということです。 3人の開発者全員が100％内部の事情に精通していました。 より大きなチームでは、これは異なる場合があります。 あなたが目指しているのは、ダンブルドアホークリュクスの状況です。あなたが死んでしまったとしても、少なくとも2〜3人がホークリュクスについて知っています。 私たちのチームは現在5人の開発者で、2人のベテラン、1人の新人、2人の平均的な開発者で構成されています。 私たちはまだ誰もがすべての人のPRをレビューするモデルに固執しようとしていますが、1人のベテランと他の1人の開発者の最小レビューユニットに切り替えることは意味があるかもしれません。</p>
+<p>「マネージャーの承認はカウントされません。」 これを聞いてあなたは思うことでしょう。「どういうことだろうか？ 私はマネージャーであり、すばらしいコーダーであり、私のレビューは完全に重要のはずだ。よくもそんなことを。」と。 マネージャーのレビューは確かに役立ちます。 私たちには素晴らしいプログラマーである素晴らしいマネージャーがいます。彼らがレビューする時間があるとき、彼らはしばしば私たちを助けるための素晴らしいヒントやアイデアを持っています。</p>
+<p>ただし、マネージャーがコーディングに費やす時間を考慮する必要があります。 それは50％以上でしょうか？ そうであれば開発者とみなせるので大丈夫。カウントしましょう。 ただし、当社では、開発マネージャーはほとんどコーディングはしていません。 結局のところ、記述されているコードと付き合っていかなければならないのは開発者です。 したがって、開発者は最終決定権を持ちます。 チームに3人の開発者がまだそれを見る機会がなかったとしても、マネージャーが1人の開発者のPRを承認し続けるという、マネージャーと開発者の無限の承認サイクルを見ることは私は本当に嫌いです。</p>
 <p>ルール2</p>
 <p>各PRには適切な説明が必要です。 説明を読むことで、レビュー担当者はコードが何をするのかを理解できるはずです。 Jiraチケットまたは要件ページがある場合でも、これは当てはまります。</p>
-<p>説明のないPR —私のチームではこれは決して起こりません。 Jiraチケットには適切な説明があるため、彼らはそれを書きませんでした。 最悪の場合：Jiraチケットには何もありません。</p>
-<p>説明のないPRのレビュワーには2つのジョブがあります</p>
-<p>コードが何をしようとしているのかを決定しようとしているのは、...宇宙と現在の地政学的な気候についてのレビュー担当者の一般的な見解に基づいていますか?</p>
-<p>コードの目的を明確に説明するステートメントがない場合、コードが正しいかどうかを確認することはできません。 何が正しいかわからないだけです。 あなたは自分が正しいと思うことを前提に操作します。</p>
+<p>説明のないPR —私のチームではこれは決して通過しません。 一番いいケースでは、Jiraチケットには適切な説明があるため、開発者が説明を書きませんでした。 最悪の場合、Jiraチケットには何も書かれていません。</p>
+<p>説明のないPRを担当するレビュワーには2つの仕事があります。 １つはPR中の変更された部分のコードを読み解いて、そのコードが何をしているか理解することです。</p>
+<p>コードが何をしようとしているのかを決定しようとしているときに、宇宙と現在の地政学的な気候についてのレビュー担当者の一般的な見解に基づいて決定を行おうとしていたらどうでしょうか？</p>
+<p>コードの目的を明確に説明する記述がない場合、コードが正しいかどうかを確認することはできません。 何が正しいかわからないだけです。 レビュワーは自分が正しいと思うことを前提にレビューしてしまいます。</p>
 <p>ルール3</p>
-<p>PRには十分な単体テストと統合テストのカバレッジが必要です。 理想的には、レビュー担当者は、カバーされているテストケースのリストを簡単に確認できる方法を持っています。 テストカバレッジがすでに存在する場合、または何らかの理由でテストカバレッジが完了していない場合（作業が別のチケット、依存関係に分割される）、PRの説明でこれについて言及する必要があります。</p>
-<p>優れたPRレビューを与えることは困難で時間がかかります。 コードが何をすることになっているのかを理解したら、レビューを停止し、これに必要なテストカバレッジを書き留める必要があるためです。 独自のテストケースリストを作成し、その種類を決定します（単体テスト/統合/エンドツーエンド）。</p>
-<p>また、運用に影響する可能性があるかどうか、および展開前にライブデータのテストが必要かどうかを検討する必要があります。</p>
-<p>これですべてを理解できたので、PRのレビューに戻り、考えたすべてをカバーしているかどうかを確認します。 理想的には、ミックスすることです。あなたは彼らがしなかった何かを考え、彼らはあなたがしなかった何かを考え、そして一緒にあなたは良い仕事をします。 これは、PRでカバーされているテストケースのリストを簡単に確認できると便利です（数百行または数千行のテスト行を読み取って、実際にテストされているケースを把握する必要がある場合）。</p>
-<p>ルール2が守られている場合は、説明を読むだけで、コードが何をすべきかを判断できます。 したがって、実際のコードを確認する前に、テストカバレッジを確認する手順を実行できます。</p>
-<p>私は個人的に、PRの説明に、これらすべて（テスト、ライブデータテスト、ライブクライアントへの影響、製品構成の変更の必要性についての言及）を維持したいと思っています。 リンクされたJiraチケットである可能性があります。 それがどこかにあり、検討されている限り。</p>
+<p>PRには十分な単体テストと統合テストのカバレッジが必要です。 レビュー担当者が、通過したテストケースのリストを簡単に確認できる方法があることが理想的です。 テストカバレッジがすでに存在する場合、または何らかの理由でテストカバレッジが完了していない場合（タスクが別のチケットなどに分割されている場合）、PRの説明でこれについて言及されている必要があります。</p>
+<p>優れたPRレビューを行うことは困難で時間がかかります。 レビュワーはコードが何をすることになっているのかを理解したら、レビューを停止し、これに必要なテストカバレッジを書き留める必要があるためです。 独自のテストケースリストを作成し、その種類（単体テスト/統合テスト/エンドツーエンドテスト）を決定します。</p>
+<p>また、レビュワーは運用に影響する可能性があるかどうか、およびデプロイ前に本番環境のデータを使ったテストが必要かどうかを検討する必要があります。</p>
+<p>これですべてを理解できたので、レビュワーはPRのレビューに戻り、自分が考えたすべてのケースをカバーしているかどうかを確認します。 理想的には、ミックスになっていることです。ミックスというのは、レビュワーはPR申請者が考えなかったことを考えて、PR申請者はレビュワーが考えなかったことを考えたということです。それらが一緒になっていれば、レビュワーは良い仕事をします。 これは、PRでカバーされているテストケースのリストを簡単に確認できると便利です（対して、数百行または数千行のテスト行を読み取って、実際にテストされているケースを把握する必要があることを考えてみてください）。</p>
+<p>ルール2が守られている場合は、説明を読むだけで、コードが何をするように書かれているかを判断できます。 したがって、実際のコードを確認する前に、テストカバレッジを確認する手順を実行できます。</p>
+<p>私は個人的に、PRの説明に、これらすべて（テスト、本番環境データを使ったテスト、本番環境クライアントへの影響、本番環境構成の変更の必要性についての言及）をつけたいと思っています。この方法では全部が一つの場所にあります。 リンクされたJiraチケットがあるかもしれません。 それがどこかにあり、検討されてきたのである限りはそうでしょう。</p>
 <p>ルール4 PRがバグ修正の場合、バグ修正が元に戻された場合、このテストは失敗するようなテストが含まれている必要があります。</p>
-<p>これは明白だと思いましたが、最も明白なことと同様に、そうではありません。</p>
-<p>==の代わりに！=にタイプミスのバグがあるとしましょう。 午後10時だったので、とにかくコーディングするべきではなかったのですが、その夜はさらに1マイル進む気がしました。 したがって、バグ修正PRを開き、！=を==に変更します。 働いている親切な方がそれを承認し、それからマスターブランチに行きます。</p>
-<p>3日後、あなたのバディデュークは、制御不能になった彼のPRを最終的に準備しました。彼は、それが小さな機能であり、それを小さなチケットに分割しなかったと思いましたが、それは事実ではなく、今彼は持っています2000行のPRで、チームに確認を求めています。</p>
-<p>Dukeは上流からマージし、==を！=に交換した場合、コードが競合します。 デュークは疲れている、何が起きているのか気づかず、！=が帰ってきた。 それを捕らえるテストがないので、バグは戻ってきました。 これは人為的な例ですが、長期間にわたって注意を払うと、これは常に発生します。 3年以上かけてバグを配置します。テストによってトラップされなかったバグが再表示されます。</p>
-<p>それでおしまい！ 3つのルール、4つ目のルールは常識的な項目です。 これらのルールは、私たちのチームがいくつかの非常に良質のコードを作成することにつながりました。 私はそれについて非常に満足しています、そして決して信用しないでください。 繰り返しになりますが、これらのルールはあなたにとって間違っていると感じるかもしれませんし、たぶん彼らはたまたま役立つかもしれません。 彼らが考えやアイデアを引き起こしたなら、私はそれで満足です！</p>
+<p>これは言わなくてもわかることだと私は思っていましたが、大抵の明白なことでそうであるように、本当は明白ではありません。</p>
+<p>あなたが==の代わりに！=にしてしまったタイプミスのバグがあるとしましょう。 午後10時だったので、あなたはとにかくコーディングするべきではなかったのですが、その夜はさらにもう少し進めることができる気がしました。 そして、あなたはバグ修正PRを開き、！=を==に変更します。 働いている親切な方がそれを承認し、その変更はマスターブランチに反映されます。</p>
+<p>3日後、あなたの相棒のデュークは、制御不能になった彼のPRを最終的に準備しました。彼は、それが小さな機能だと思い、それを小さなチケットに分割しませんでした。しかし、それは事実ではなく、今彼はチームにレビューを求めているPRには2000行が存在します。</p>
+<p>Dukeは上流からマージすると、！=を==に変更したところでコードが競合します。 デュークは疲れていて、何が起きているのか気づかず、！=を戻してしまいます。 それを捕らえるテストがないので、バグは戻ってきました。 これは人為的な例ですが、長期間にわたって注意を払うと、これは常に発生します。 3年以上かけてバグをいろいろな場所に配置してみてください。テストによってトラップされなかったバグが再現されるのを見ることになるでしょう。</p>
+<p>以上！ 3つのルール、4つ目のルールは常識的な項目です。 これらのルールのおかげで私たちのチームはいくつかの非常に良質のコードを作成することができたと私は感じています。 私は非常に満足していますが、決してそのまま真似するようなことはしないでください。 繰り返しになりますが、これらのルールはあなたには正しい方法ではないと感じられるかもしれませんし、たまたま役立つ可能性もあります。 これらのルールが考えやアイデアを引き起こしたなら、私はそれで満足です！</p>
 </span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Categories</h5><a href="/docs/ja/qiita/index.html">Qiita</a><a href="/docs/ja/udemy/index.html">Udemy</a><a href="/docs/ja/dao/index.html">DAO</a></div><div><h5>Community</h5><a href="https://discord.gg/xCRqdUU" target="_blank" rel="noreferrer noopener">Project Chat</a><a href="https://twitter.com/babydegu" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/baby-degu">GitHub</a><a class="github-button" href="https://github.com/baby-degu/portal" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a><div class="social"><a href="https://twitter.com/babydegu" class="twitter-follow-button">Follow @babydegu</a></div></div></section><section class="copyright"><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer noopener">Content is licensed under CC BY-SA 4.0</a></section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
