@@ -10,7 +10,7 @@ hide_title: true
 
 ## Articles
 
-## Articles with permissive 
+## Articles with permissive license
 
 - [How to design a system to scale to your first 100 million users](https://qiita.com/baby-degu/items/532bea7be058c35f61a8)
 - [100 Helpful Python Tips You Can Learn Before Finishing Your Morning Coffee(1/2)](https://qiita.com/baby-degu/items/532bea7be058c35f61a8)
