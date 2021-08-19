@@ -13,7 +13,7 @@ hide_title: true
 ## Articles with permissive license
 
 - [How to design a system to scale to your first 100 million users](https://qiita.com/baby-degu/items/532bea7be058c35f61a8)
-- [100 Helpful Python Tips You Can Learn Before Finishing Your Morning Coffee(1/2)](https://qiita.com/baby-degu/items/532bea7be058c35f61a8)
+- [100 Helpful Python Tips You Can Learn Before Finishing Your Morning Coffee(2/2)](https://qiita.com/baby-degu/items/532bea7be058c35f61a8)
 - [100 Helpful Python Tips You Can Learn Before Finishing Your Morning Coffee(1/2)](https://qiita.com/baby-degu/items/05cf809d4d992923020d)
 - [Need Inspiration? Here Are 5 Challenging App Ideas You Can Start Building Today](https://qiita.com/baby-degu/items/c0a3784dc5285185484a)
 - [How You Should Read Research Papers According To Andrew Ng (Stanford Deep Learning Lectures)](https://qiita.com/baby-degu/items/f6f8ab57290d2db3e6fb)
