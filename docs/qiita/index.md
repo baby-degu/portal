@@ -12,7 +12,11 @@ hide_title: true
 
 ## Articles with permissive license
 
-- [How to design a system to scale to your first 100 million users](https://qiita.com/baby-degu/items/532bea7be058c35f61a8)
+### 2021
+- [6 Cool Python Libraries That I Came Across Recently](https://qiita.com/baby-degu/items/86e8881d3317da17617c)
+- [9 Popular GitHub Repos For Every Web Developer](https://qiita.com/baby-degu/items/d9e530ec574683bf6f24)
+- [How to design a system to scale to your first 100 million users(2/2)](https://qiita.com/baby-degu/items/f729417946270010e269)
+- [How to design a system to scale to your first 100 million users(1/2)](https://qiita.com/baby-degu/items/532bea7be058c35f61a8)
 - [100 Helpful Python Tips You Can Learn Before Finishing Your Morning Coffee(2/2)](https://qiita.com/baby-degu/items/532bea7be058c35f61a8)
 - [100 Helpful Python Tips You Can Learn Before Finishing Your Morning Coffee(1/2)](https://qiita.com/baby-degu/items/05cf809d4d992923020d)
 - [Need Inspiration? Here Are 5 Challenging App Ideas You Can Start Building Today](https://qiita.com/baby-degu/items/c0a3784dc5285185484a)
@@ -46,6 +50,8 @@ hide_title: true
 - [13 Must-Have Browser Extensions for Web Developers](https://qiita.com/baby-degu/items/83f674c0eb91d1ea1521)
 - [11 Useful Online Tools for Frontend Developers](https://qiita.com/baby-degu/items/1b65414d856fff671c6f)
 - [3 Mistakes Junior Developers Make With a React Component's State](https://qiita.com/baby-degu/items/51d49bd95c178f5578e8)
+
+### 2020
 - [11 Frontend tricks that most Frontend Developers don't know about](https://qiita.com/baby-degu/items/1cfbf203d74bfd0b856c)
 - [36 JavaScript Concepts You Need to Master to Become an Expert](https://qiita.com/baby-degu/items/0e3420f3fa41b3b0d561)
 - [8 Levels of Using List Comprehension in Python](https://qiita.com/baby-degu/items/674a09d9fc6b6cd73ce3)
